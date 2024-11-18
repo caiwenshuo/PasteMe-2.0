@@ -18,6 +18,8 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
     statusBarButton: NSStatusBarButton? = nil,
     view: () -> Content
   ) {
+      print(contentRect.width)
+      print(contentRect.height)
     super.init(
         contentRect: contentRect,
         styleMask: [.nonactivatingPanel, .titled, .resizable, .closable, .fullSizeContentView],

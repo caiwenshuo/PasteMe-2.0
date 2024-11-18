@@ -36,12 +36,14 @@ struct ListItemView<Title: View>: View {
           .frame(width: 50)
       }
     }
-    .frame(minHeight: 22)
+    .padding()
+    .frame(minHeight: 40)
     .id(id)
     .frame(maxWidth: .infinity, alignment: .leading)
     .foregroundStyle(isSelected ? Color.white : .primary)
     .background(isSelected ? Color.accentColor.opacity(0.8) : .clear)
-    .clipShape(.rect(cornerRadius: 4))
+    .background(Color(NSColor.controlBackgroundColor).opacity(0.7))
+    .clipShape(.rect(cornerRadius: 10))
     .onHover { hovering in
       if hovering {
         if !appState.isKeyboardNavigating {

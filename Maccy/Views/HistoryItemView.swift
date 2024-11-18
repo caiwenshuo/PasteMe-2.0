@@ -14,7 +14,7 @@ struct HistoryItemView: View {
       shortcuts: item.shortcuts,
       isSelected: item.isSelected
     ) {
-      Text(verbatim: item.title)
+      Text(verbatim: item.text)
     }
     .onTapGesture {
       appState.history.select(item)

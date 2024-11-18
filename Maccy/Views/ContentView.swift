@@ -22,7 +22,7 @@ struct ContentView: View {
           HistoryListView(
             searchQuery: $appState.history.searchQuery,
             searchFocused: $searchFocused
-          )
+          ).padding(.horizontal, 5)
 
           FooterView(footer: appState.footer)
         }

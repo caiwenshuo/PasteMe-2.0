@@ -9,13 +9,15 @@ struct HeaderView: View {
   @Environment(\.scenePhase) private var scenePhase
 
   @Default(.showTitle) private var showTitle
+  
+  @State var showMenu = false
 
   var body: some View {
     HStack {
-      if showTitle {
-        Text("Maccy")
-          .foregroundStyle(.secondary)
-      }
+//      if showTitle {
+//        Text("Maccy")
+//          .foregroundStyle(.secondary)
+//      }
 
       SearchFieldView(placeholder: "search_placeholder", query: $searchQuery)
         .focused($searchFocused)
@@ -25,6 +27,12 @@ struct HeaderView: View {
             searchQuery = ""
           }
         }
+      Image(systemName: "ellipsis").onTapGesture {
+        showMenu.toggle()
+      }.popover(isPresented: $showMenu) {
+        Button("Quit") {
+        }
+      }
     }
     .frame(height: appState.searchVisible ? 25 : 0)
     .opacity(appState.searchVisible ? 1 : 0)

@@ -8,13 +8,13 @@ struct ListItemTitleView<Title: View>: View {
     if let attributedTitle {
       Text(attributedTitle)
         .accessibilityIdentifier("copy-history-item")
-        .lineLimit(1)
+        .lineLimit(4)
         .truncationMode(.middle)
         .padding(.leading, 10)
     } else {
       title()
         .accessibilityIdentifier("copy-history-item")
-        .lineLimit(1)
+        .lineLimit(4)
         .truncationMode(.middle)
         .padding(.leading, 10)
     }
