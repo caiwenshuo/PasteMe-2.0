@@ -6,6 +6,7 @@ import SwiftUI
 class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
   var isPresented: Bool = false
   var statusBarButton: NSStatusBarButton?
+  var panelState = PanelState()
 
   override var isMovable: Bool {
     get { Defaults[.popupPosition] != .statusItem }
@@ -48,7 +49,7 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
     standardWindowButton(.zoomButton)?.isHidden = true
 
     contentView = NSHostingView(
-      rootView: view()
+      rootView: view().environmentObject(panelState)
         // The safe area is ignored because the title bar still interferes with the geometry
         .ignoresSafeArea()
         .gesture(DragGesture()
@@ -122,10 +123,14 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
     super.close()
     isPresented = false
     statusBarButton?.isHighlighted = false
+    panelState.showMenu = false
   }
 
   // Allow text inputs inside the panel can receive focus
   override var canBecomeKey: Bool {
     return true
   }
+}
+class PanelState: ObservableObject {
+    @Published var showMenu: Bool = false
 }

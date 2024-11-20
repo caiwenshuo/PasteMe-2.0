@@ -7,18 +7,12 @@ struct HeaderView: View {
 
   @Environment(AppState.self) private var appState
   @Environment(\.scenePhase) private var scenePhase
-
-  @Default(.showTitle) private var showTitle
   
-  @State var showMenu = false
+  //避免关闭Panel后下次打开，popover依然打开的问题
+  @EnvironmentObject private var panelState: PanelState
 
   var body: some View {
     HStack {
-//      if showTitle {
-//        Text("Maccy")
-//          .foregroundStyle(.secondary)
-//      }
-
       SearchFieldView(placeholder: "search_placeholder", query: $searchQuery)
         .focused($searchFocused)
         .frame(maxWidth: .infinity)
@@ -27,11 +21,10 @@ struct HeaderView: View {
             searchQuery = ""
           }
         }
-      Image(systemName: "ellipsis").onTapGesture {
-        showMenu.toggle()
-      }.popover(isPresented: $showMenu) {
-        Button("Quit") {
-        }
+      Image(systemName: "ellipsis").resizable().aspectRatio(contentMode: .fit).frame(width: 15, height: 15).contentShape(Rectangle()).onTapGesture {
+        panelState.showMenu.toggle()
+      }.popover(isPresented: $panelState.showMenu) {
+        FooterView(footer: appState.footer)
       }
     }
     .frame(height: appState.searchVisible ? 25 : 0)

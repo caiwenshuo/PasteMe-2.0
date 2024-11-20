@@ -178,10 +178,6 @@ struct AppearanceSettingsPane: View {
           .disabled(!showSearch)
           .controlSize(.small)
         }
-        Defaults.Toggle(key: .showTitle) {
-          Text("ShowTitleBeforeSearchField", tableName: "AppearanceSettings")
-        }
-
         Defaults.Toggle(key: .showFooter) {
           Text("ShowFooter", tableName: "AppearanceSettings")
         }

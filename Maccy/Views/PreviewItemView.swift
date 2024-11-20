@@ -28,22 +28,10 @@ struct PreviewItemView: View {
       }
 
       HStack(spacing: 3) {
-        Text("FirstCopyTime", tableName: "PreviewItemView")
-        Text(item.item.firstCopiedAt, style: .date)
-        Text(item.item.firstCopiedAt, style: .time)
-      }
-
-      HStack(spacing: 3) {
         Text("LastCopyTime", tableName: "PreviewItemView")
         Text(item.item.lastCopiedAt, style: .date)
         Text(item.item.lastCopiedAt, style: .time)
       }
-
-      HStack(spacing: 3) {
-        Text("NumberOfCopies", tableName: "PreviewItemView")
-        Text(String(item.item.numberOfCopies))
-      }
-      .padding(.bottom)
 
       if let pinKey = KeyboardShortcuts.Shortcut(name: .pin) {
         Text(
@@ -52,12 +40,6 @@ struct PreviewItemView: View {
         )
       }
 
-      if let deleteKey = KeyboardShortcuts.Shortcut(name: .delete) {
-        Text(
-          NSLocalizedString("DeleteKey", tableName: "PreviewItemView", comment: "")
-            .replacingOccurrences(of: "{deleteKey}", with: deleteKey.description)
-        )
-      }
     }
     .controlSize(.small)
     .frame(maxWidth: 800)

@@ -1,11 +1,11 @@
 "search_placeholder" = "搜索…";
 "clear_tooltip" = "清除未固定的项目。\n按住 ⇧ 以全部清除。";
 "clear_all_tooltip" = "清除全部项目。";
-"about_tooltip" = "查看更多应用信息。";
+"contact_developer_tooltip" = "获取联系开发者方式。";
 "quit_tooltip" = "退出应用。";
 "clear" = "清除";
 "clear_all" = "全部清除";
-"about" = "关于";
+"contact_developer" = "联系开发者";
 "quit" = "退出";
 "preferences" = "偏好设置…";
 "preferences_advanced" = "高级";
@@ -28,3 +28,10 @@
 "system_settings_pane" = "“隐私与安全性“";
 "system_preferences_name" = "“系统偏好设置”";
 "system_preferences_pane" = "“安全性和隐私”";
+"Twitter: " = "推特：";
+"WeChat:" = "微信：";
+"Contact Me" = "联系开发者";
+"Mail: cswenshuo@gmail.com" = "邮箱：cswenshuo@gmail.com";
+"Twitter: masoncaiws" = "推特：masoncaiws";
+"Feel free to contact me if you have any suggestions or feedback🙏" = "如有任何意见，随时与我联系🙏";
+

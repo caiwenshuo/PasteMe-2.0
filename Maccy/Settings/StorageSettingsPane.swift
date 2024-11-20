@@ -57,7 +57,6 @@ struct StorageSettingsPane: View {
   }
 
   @Default(.size) private var size
-  @Default(.sortBy) private var sortBy
 
   @State private var viewModel = ViewModel()
 
@@ -99,17 +98,6 @@ struct StorageSettingsPane: View {
           Stepper("", value: $size, in: 1...9999)
             .labelsHidden()
         }
-      }
-
-      Settings.Section(label: { Text("SortBy", tableName: "StorageSettings") }) {
-        Picker("", selection: $sortBy) {
-          ForEach(Sorter.By.allCases) { mode in
-            Text(mode.description)
-          }
-        }
-        .labelsHidden()
-        .frame(width: 160)
-        .help(Text("SortByTooltip", tableName: "StorageSettings"))
       }
     }
   }

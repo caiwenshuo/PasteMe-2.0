@@ -24,7 +24,6 @@ struct ContentView: View {
             searchFocused: $searchFocused
           ).padding(.horizontal, 5)
 
-          FooterView(footer: appState.footer)
         }
       }
       .animation(.default.speed(3), value: appState.history.items)
@@ -72,5 +71,5 @@ struct ContentView: View {
 #Preview {
   ContentView()
     .environment(\.locale, .init(identifier: "en"))
-    .modelContainer(Storage.shared.container)
+    .modelContainer(Storage.shared.container).environmentObject(PanelState())
 }

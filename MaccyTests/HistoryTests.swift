@@ -5,20 +5,17 @@ import Defaults
 @MainActor
 class HistoryTests: XCTestCase {
   let savedSize = Defaults[.size]
-  let savedSortBy = Defaults[.sortBy]
   let history = History.shared
 
   override func setUp() {
     super.setUp()
     history.clearAll()
     Defaults[.size] = 10
-    Defaults[.sortBy] = .firstCopiedAt
   }
 
   override func tearDown() {
     super.tearDown()
     Defaults[.size] = savedSize
-    Defaults[.sortBy] = savedSortBy
   }
 
   func testDefaultIsEmpty() {

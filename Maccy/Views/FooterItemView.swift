@@ -5,9 +5,10 @@ struct FooterItemView: View {
 
   var body: some View {
     ConfirmationView(item: item) {
-      ListItemView(id: item.id, shortcuts: item.shortcuts, isSelected: item.isSelected) {
+      HStack{
         Text(LocalizedStringKey(item.title))
-      }
+        Spacer()
+      }.padding().frame(width: 120, height: 30)
     }
   }
 }

@@ -2,6 +2,7 @@ import AppKit
 import Defaults
 import Foundation
 import Settings
+import SwiftUI
 
 @Observable
 class AppState: Sendable {
@@ -52,7 +53,6 @@ class AppState: Sendable {
     return title.shortened(to: 20)
   }
 
-  private let about = About()
   private var settingsWindowController: SettingsWindowController?
 
   init() {
@@ -136,8 +136,22 @@ class AppState: Sendable {
     }
   }
 
-  func openAbout() {
-    about.openAbout(nil)
+  func openContactWindow() {
+    let contentView = ContactView()
+    // Create the window and set the content view.
+    let window = NSWindow(
+        contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
+        styleMask: [.titled, .closable, .miniaturizable, .fullSizeContentView],
+        backing: .buffered, defer: false)
+    window.center()
+    //使得窗口关闭后可以重新通过dock打开
+    window.titlebarAppearsTransparent = true
+    window.titleVisibility = .hidden
+    window.backgroundColor = .controlBackgroundColor
+    window.isReleasedWhenClosed = false
+    window.setFrameAutosaveName("Contact Window")
+    window.contentView = NSHostingView(rootView: contentView)
+    window.makeKeyAndOrderFront(nil)
   }
 
   @MainActor

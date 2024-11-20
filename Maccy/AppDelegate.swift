@@ -1,6 +1,5 @@
 import Defaults
 import KeyboardShortcuts
-import Sparkle
 import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -23,16 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   private var statusItemVisibilityObserver: NSKeyValueObservation?
 
-  func applicationWillFinishLaunching(_ notification: Notification) { // swiftlint:disable:this function_body_length
-    #if DEBUG
-    if CommandLine.arguments.contains("enable-testing") {
-      SPUUpdater(hostBundle: Bundle.main,
-                 applicationBundle: Bundle.main,
-                 userDriver: SPUStandardUserDriver(hostBundle: Bundle.main, delegate: nil),
-                 delegate: nil)
-      .automaticallyChecksForUpdates = false
-    }
-    #endif
+  func applicationWillFinishLaunching(_ notification: Notification) {
 
     // Bridge FloatingPanel via AppDelegate.
     AppState.shared.appDelegate = self
@@ -94,7 +84,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     panel = FloatingPanel(
       contentRect: NSRect(origin: .zero, size: Defaults[.windowSize]),
-      identifier: Bundle.main.bundleIdentifier ?? "org.p0deje.Maccy",
+      identifier: Bundle.main.bundleIdentifier ?? "com.caiwenshuo.pasteme",
       statusBarButton: statusItem.button
     ) {
       ContentView()
@@ -120,7 +110,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       // Inverse hide* configuration keys.
       Defaults[.showFooter] = !UserDefaults.standard.bool(forKey: "hideFooter")
       Defaults[.showSearch] = !UserDefaults.standard.bool(forKey: "hideSearch")
-      Defaults[.showTitle] = !UserDefaults.standard.bool(forKey: "hideTitle")
       UserDefaults.standard.removeObject(forKey: "hideFooter")
       UserDefaults.standard.removeObject(forKey: "hideSearch")
       UserDefaults.standard.removeObject(forKey: "hideTitle")

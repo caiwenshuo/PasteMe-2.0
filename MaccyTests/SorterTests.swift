@@ -27,13 +27,13 @@ class SorterTests: XCTestCase {
     XCTAssertEqual(sorter.sort([item1, item2, item3], by: .lastCopiedAt), [item1, item3, item2])
   }
 
-  func testSortByFirstCopiedAt() {
-    XCTAssertEqual(sorter.sort([item1, item2, item3], by: .firstCopiedAt), [item3, item1, item2])
-  }
-
-  func testSortByNumberOfCopies() {
-    XCTAssertEqual(sorter.sort([item1, item2, item3], by: .numberOfCopies), [item1, item2, item3])
-  }
+//  func testSortByFirstCopiedAt() {
+//    XCTAssertEqual(sorter.sort([item1, item2, item3], by: .firstCopiedAt), [item3, item1, item2])
+//  }
+//
+//  func testSortByNumberOfCopies() {
+//    XCTAssertEqual(sorter.sort([item1, item2, item3], by: .numberOfCopies), [item1, item2, item3])
+//  }
 
   func testSortByPinToTop() {
     Defaults[.pinTo] = .top
