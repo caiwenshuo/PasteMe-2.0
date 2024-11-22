@@ -1,6 +1,6 @@
 "Title" = "Дополнения";
 "TurnOff" = "Выключить";
-"TurnOffDescription" = "Временно игнорировать все новые копировния.\nВы можете использовать эту настройку программно и отключить приложение на время копирования конфиденциальных данных.";
+"TurnOffDescription" = "Временно игнорировать все новые копировния.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# копировать данные\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Вы также можете кликнуть значок меню с нажатой клавишей ⌥.\nЧтобы игнорировать только следующую копию, кликните с ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# копировать данные";

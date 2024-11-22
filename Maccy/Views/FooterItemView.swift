@@ -8,7 +8,7 @@ struct FooterItemView: View {
       HStack{
         Text(LocalizedStringKey(item.title))
         Spacer()
-      }.padding().frame(width: 120, height: 30)
+      }.padding().frame(maxWidth: 400, maxHeight: 30)
     }
   }
 }

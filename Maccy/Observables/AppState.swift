@@ -151,6 +151,7 @@ class AppState: Sendable {
     window.isReleasedWhenClosed = false
     window.setFrameAutosaveName("Contact Window")
     window.contentView = NSHostingView(rootView: contentView)
+    NSApp.activate(ignoringOtherApps: true)
     window.makeKeyAndOrderFront(nil)
   }
 

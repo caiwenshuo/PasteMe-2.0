@@ -1,6 +1,6 @@
 "Title" = "Розширені опції";
 "TurnOff" = "Вимкнути";
-"TurnOffDescription" = "Тимчасово ігноруйте всі нові копії.\nВи, ймовірно, використаєте це програмно та вимкнете програму під час копіювання конфіденційних даних.";
+"TurnOffDescription" = "Тимчасово ігноруйте всі нові копії.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# копіювати данні\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Ви також можете натиснути значок меню, утримуючи ⌥.\nЩоб проігнорувати лише наступну копію, натисніть ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# копіювати данні";

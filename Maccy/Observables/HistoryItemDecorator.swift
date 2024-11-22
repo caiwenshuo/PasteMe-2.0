@@ -98,17 +98,8 @@ class HistoryItemDecorator: Identifiable, Hashable {
     for range in ranges {
       if let lowerBound = AttributedString.Index(range.lowerBound, within: attributedString),
          let upperBound = AttributedString.Index(range.upperBound, within: attributedString) {
-        switch Defaults[.highlightMatch] {
-        case .bold:
-          attributedString[lowerBound..<upperBound].font = .bold(.body)()
-        case .italic:
-          attributedString[lowerBound..<upperBound].font = .italic(.body)()
-        case .underline:
-          attributedString[lowerBound..<upperBound].underlineStyle = .single
-        default:
           attributedString[lowerBound..<upperBound].backgroundColor = .findHighlightColor
           attributedString[lowerBound..<upperBound].foregroundColor = .black
-        }
       }
     }
 

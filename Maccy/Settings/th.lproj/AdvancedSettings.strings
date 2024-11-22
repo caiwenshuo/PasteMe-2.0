@@ -1,6 +1,6 @@
 "Title" = "ขั้นสูง";
 "TurnOff" = "ปิด";
-"TurnOffDescription" = "ไม่สนใจการคัดลอกทั้งหมดชั่วคราว.\nดูเหมือนว่าคุณตั้งค่าปิดการทำงานแอปขณะคัดลอกข้อมูลสำคัญ";
+"TurnOffDescription" = "ไม่สนใจการคัดลอกทั้งหมดชั่วคราว.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# คัดลอกข้อมูล\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "คุณยังสามารถคลิกไอคอนเมนูโดยกด ⌥\nหากต้องการละเว้นเฉพาะสำเนาถัดไป ให้คลิกด้วย ⌥⇧";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# คัดลอกข้อมูล";

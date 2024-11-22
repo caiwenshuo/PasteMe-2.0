@@ -1,6 +1,6 @@
 "Title" = "متقدم";
 "TurnOff" = "إيقاف";
-"TurnOffDescription" = "تجاهل جميع النسخ الجديدة مؤقتًا.\nمن المرجح أن تستخدمه برمجيًا وتعطل التطبيق أثناء نسخ البيانات الحساسة.";
+"TurnOffDescription" = "تجاهل جميع النسخ الجديدة مؤقتًاتجاهل جميع النسخ الجديدة مؤقتًا.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\nنسخ البيانات #\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "يمكنك أيضًا النقر على أيقونة القائمة مع ⌥ مضغوط.\nلتجاهل النسخة التالية فقط، انقر بـ ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\nنسخ البيانات #";

@@ -17,7 +17,6 @@ extension Defaults.Keys {
   static let enabledPasteboardTypes = Key<Set<NSPasteboard.PasteboardType>>(
     "enabledPasteboardTypes", default: Set(StorageType.all.types)
   )
-  static let highlightMatch = Key<HighlightMatch>("highlightMatch", default: .bold)
   static let ignoreAllAppsExceptListed = Key<Bool>("ignoreAllAppsExceptListed", default: false)
   static let ignoreEvents = Key<Bool>("ignoreEvents", default: false)
   static let ignoreOnlyNextEvent = Key<Bool>("ignoreOnlyNextEvent", default: false)
@@ -33,7 +32,7 @@ extension Defaults.Keys {
       "net.antelle.keeweb"
     ])
   )
-  static let imageMaxHeight = Key<Int>("imageMaxHeight", default: 40)
+  static let imageMaxHeight = Key<Int>("imageMaxHeight", default: 100)
   static let lastReviewRequestedAt = Key<Date>("lastReviewRequestedAt", default: Date.now)
   static let menuIcon = Key<MenuIcon>("menuIcon", default: .maccy)
   static let migrations = Key<[String: Bool]>("migrations", default: [:])

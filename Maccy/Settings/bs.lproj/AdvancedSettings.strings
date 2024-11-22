@@ -1,6 +1,6 @@
 "Title" = "Napredno";
 "TurnOff" = "Ugasi";
-"TurnOffDescription" = "Privremeno zanemari sve nove kopije.\nKoristi programski i onemogućiti aplikaciju dok kopirate osjetljive podatke.";
+"TurnOffDescription" = "Privremeno zanemari sve nove kopije.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# kopirati podatke\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "Takođe možeš kliknuti na ikonu menija sa pritisnutim ⌥.\nDa zanemariš samo sljedeću kopiju, kliknite sa ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# kopirati podatke";

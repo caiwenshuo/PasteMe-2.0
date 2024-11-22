@@ -7,14 +7,13 @@ struct AppearanceSettingsPane: View {
   @Default(.popupPosition) private var popupAt
   @Default(.popupScreen) private var popupScreen
   @Default(.pinTo) private var pinTo
-  @Default(.imageMaxHeight) private var imageHeight
+//  @Default(.imageMaxHeight) private var imageHeight
   @Default(.previewDelay) private var previewDelay
-  @Default(.highlightMatch) private var highlightMatch
   @Default(.menuIcon) private var menuIcon
   @Default(.showInStatusBar) private var showInStatusBar
-  @Default(.showSearch) private var showSearch
-  @Default(.searchVisibility) private var searchVisibility
-  @Default(.showFooter) private var showFooter
+//  @Default(.showSearch) private var showSearch
+//  @Default(.searchVisibility) private var searchVisibility
+//  @Default(.showFooter) private var showFooter
   @Default(.windowPosition) private var windowPosition
 
   @State private var screens = NSScreen.screens
@@ -104,15 +103,15 @@ struct AppearanceSettingsPane: View {
         .help(Text("PinToTooltip", tableName: "AppearanceSettings"))
       }
 
-      Settings.Section(label: { Text("ImageHeight", tableName: "AppearanceSettings") }) {
-        HStack {
-          TextField("", value: $imageHeight, formatter: imageHeightFormatter)
-            .frame(width: 120)
-            .help(Text("ImageHeightTooltip", tableName: "AppearanceSettings"))
-          Stepper("", value: $imageHeight, in: 1...200)
-            .labelsHidden()
-        }
-      }
+//      Settings.Section(label: { Text("ImageHeight", tableName: "AppearanceSettings") }) {
+//        HStack {
+//          TextField("", value: $imageHeight, formatter: imageHeightFormatter)
+//            .frame(width: 120)
+//            .help(Text("ImageHeightTooltip", tableName: "AppearanceSettings"))
+//          Stepper("", value: $imageHeight, in: 1...200)
+//            .labelsHidden()
+//        }
+//      }
 
       Settings.Section(label: { Text("PreviewDelay", tableName: "AppearanceSettings") }) {
         HStack {
@@ -121,21 +120,8 @@ struct AppearanceSettingsPane: View {
             .help(Text("PreviewDelayTooltip", tableName: "AppearanceSettings"))
           Stepper("", value: $previewDelay, in: 200...100_000)
             .labelsHidden()
+          Text("ms", tableName: "AppearanceSettings")
         }
-      }
-
-      Settings.Section(
-        bottomDivider: true,
-        label: { Text("HighlightMatches", tableName: "AppearanceSettings") }
-      ) {
-        Picker("", selection: $highlightMatch) {
-          ForEach(HighlightMatch.allCases) { match in
-            Text(match.description)
-          }
-        }
-        .labelsHidden()
-        .frame(width: 141)
-        .help(Text("HighlightMatchesTooltip", tableName: "AppearanceSettings"))
       }
 
       Settings.Section(title: "") {
@@ -163,28 +149,28 @@ struct AppearanceSettingsPane: View {
         Defaults.Toggle(key: .showRecentCopyInMenuBar) {
           Text("ShowRecentCopyInMenuBar", tableName: "AppearanceSettings")
         }
-        HStack {
-          Defaults.Toggle(key: .showSearch) {
-            Text("ShowSearchField", tableName: "AppearanceSettings")
-          }
-
-          Picker("", selection: $searchVisibility) {
-            ForEach(SearchVisibility.allCases) { type in
-              Text(type.description)
-            }
-          }
-          .labelsHidden()
-          .scaledToFit()
-          .disabled(!showSearch)
-          .controlSize(.small)
-        }
-        Defaults.Toggle(key: .showFooter) {
-          Text("ShowFooter", tableName: "AppearanceSettings")
-        }
-        Text("OpenPreferencesWarning", tableName: "AppearanceSettings")
-          .opacity(showFooter ? 0 : 1)
-          .controlSize(.small)
-          .foregroundStyle(.gray)
+//        HStack {
+//          Defaults.Toggle(key: .showSearch) {
+//            Text("ShowSearchField", tableName: "AppearanceSettings")
+//          }
+//
+//          Picker("", selection: $searchVisibility) {
+//            ForEach(SearchVisibility.allCases) { type in
+//              Text(type.description)
+//            }
+//          }
+//          .labelsHidden()
+//          .scaledToFit()
+//          .disabled(!showSearch)
+//          .controlSize(.small)
+//        }
+//        Defaults.Toggle(key: .showFooter) {
+//          Text("ShowFooter", tableName: "AppearanceSettings")
+//        }
+//        Text("OpenPreferencesWarning", tableName: "AppearanceSettings")
+//          .opacity(showFooter ? 0 : 1)
+//          .controlSize(.small)
+//          .foregroundStyle(.gray)
       }
     }
     .onReceive(NotificationCenter.default.publisher(for: NSApplication.didChangeScreenParametersNotification)) { _ in

@@ -6,5 +6,5 @@
 "ClearSystemClipboard" = "A rendszer vágólapjának is a törlése";
 "ClearSystemClipboardTooltip" = "Ha be van kapcsolva, az előzmények törlésével a rendszer aktuális vágólapját is törli.";
 "TurnOff" = "Kikapcsolás";
-"TurnOffDescription" = "Az összes új másolás figyelmen kívül hagyása.\nValószínűleg programozottan használod, és kikapcsolod az alkalmazást bizalmas adatok másolása közben.";
+"TurnOffDescription" = "Az összes új másolás figyelmen kívül hagyása.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# adatok másolása\ndefaults write org.p0deje.Maccy ignoreEvents false";

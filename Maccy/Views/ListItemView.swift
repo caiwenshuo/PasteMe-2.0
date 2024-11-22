@@ -40,10 +40,12 @@ struct ListItemView<Title: View>: View {
     .frame(minHeight: 40)
     .id(id)
     .frame(maxWidth: .infinity, alignment: .leading)
-    .foregroundStyle(isSelected ? Color.white : .primary)
-    .background(isSelected ? Color.accentColor.opacity(0.8) : .clear)
     .background(Color(NSColor.controlBackgroundColor).opacity(0.7))
-    .clipShape(.rect(cornerRadius: 10))
+    .overlay(
+      RoundedRectangle(cornerRadius: 10)
+        .stroke(isSelected ? Color(NSColor(named: "SelectedFrame")!) : .clear, lineWidth: 4)
+    )
+    .clipShape(RoundedRectangle(cornerRadius: 10)) // Ensure border respects corner radius
     .onHover { hovering in
       if hovering {
         if !appState.isKeyboardNavigating {

@@ -1,6 +1,6 @@
 "Title" = "Avanzado";
 "TurnOff" = "Desactivar";
-"TurnOffDescription" = "Ignora temporalmente los nuevos elementos copiados.\nTambién se puede (des)activar la opción por consola para evitar copiar datos sensibles.";
+"TurnOffDescription" = "Ignora temporalmente los nuevos elementos copiados.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# volver a copiar elementos\ndefaults write org.p0deje.Maccy ignoreEvents false";
 "TurnOffViaMenuIconDescription" = "También puede hacer clic en el icono de menú con ⌥ presionado.\nPara ignorar solo la siguiente copia, haga clic con ⌥⇧.";
 "TurnOffNextShellScript" = "defaults write org.p0deje.Maccy ignoreOnlyNextEvent true\n# volver a copiar elementos";

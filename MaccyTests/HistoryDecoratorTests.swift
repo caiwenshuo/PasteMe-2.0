@@ -5,7 +5,6 @@ import Defaults
 @MainActor
 class HistoryItemDecoratorTests: XCTestCase {
   let boldFont = NSFont.boldSystemFont(ofSize: NSFont.systemFontSize)
-  let savedHighlightMatch = Defaults[.highlightMatch]
   let savedImageMaxHeight = Defaults[.imageMaxHeight]
 
   var firstCopiedAt: Date! {
@@ -22,14 +21,12 @@ class HistoryItemDecoratorTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    Defaults[.highlightMatch] = .bold
     Defaults[.imageMaxHeight] = 40
   }
 
   override func tearDown() {
     super.tearDown()
     Defaults[.imageMaxHeight] = savedImageMaxHeight
-    Defaults[.highlightMatch] = savedHighlightMatch
   }
 
   func testString() {
