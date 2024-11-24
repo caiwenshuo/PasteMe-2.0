@@ -8,7 +8,8 @@ class Storage {
   var container: ModelContainer
   var context: ModelContext { container.mainContext }
 
-  private let url = URL.applicationSupportDirectory.appending(path: "Maccy/Storage.sqlite")
+  //将Maccy/Storage.sqlite改为了PasteMe/Storage.sqlite，不确定风险
+  private let url = URL.applicationSupportDirectory.appending(path: "PasteMe/Storage.sqlite")
 
   init() {
     var config = ModelConfiguration(url: url)

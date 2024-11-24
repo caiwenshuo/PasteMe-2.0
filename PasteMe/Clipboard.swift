@@ -107,10 +107,10 @@ class Clipboard {
 
     pasteboard.setString("", forType: .fromMaccy)
 
-    Task {
-      Notifier.notify(body: item.title, sound: .knock)
-      checkForChangesInPasteboard()
-    }
+//    Task {
+//      Notifier.notify(body: item.title, sound: .knock)
+//      checkForChangesInPasteboard()
+//    }
   }
 
   // Based on https://github.com/Clipy/Clipy/blob/develop/Clipy/Sources/Services/PasteService.swift.

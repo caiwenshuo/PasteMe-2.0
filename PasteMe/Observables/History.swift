@@ -138,9 +138,9 @@ class History { // swiftlint:disable:this type_body_length
         all.remove(at: removedItemIndex)
       }
     } else {
-      Task {
-        Notifier.notify(body: item.title, sound: .write)
-      }
+//      Task {
+//        Notifier.notify(body: item.title, sound: .write)
+//      }
     }
 
     sessionLog[Clipboard.shared.changeCount] = item
