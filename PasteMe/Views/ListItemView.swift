@@ -43,7 +43,7 @@ struct ListItemView<Title: View>: View {
     .background(Color(NSColor.controlBackgroundColor).opacity(0.7))
     .overlay(
       RoundedRectangle(cornerRadius: 10)
-        .stroke(isSelected ? Color(NSColor(named: "SelectedFrame")!) : .clear, lineWidth: 4)
+        .stroke(isSelected ? Color(NSColor(named: "SelectedFrame")!) : .clear, lineWidth: 5)
     )
     .clipShape(RoundedRectangle(cornerRadius: 10)) // Ensure border respects corner radius
     .onHover { hovering in
