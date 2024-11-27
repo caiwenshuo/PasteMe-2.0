@@ -12,6 +12,7 @@ class AppState: Sendable {
   var popup: Popup
   var history: History
   var footer: Footer
+  var contextMenu: ContextMenu
 
   var scrollTarget: UUID?
   var selection: UUID? {
@@ -59,6 +60,7 @@ class AppState: Sendable {
     history = History.shared
     footer = Footer()
     popup = Popup()
+    contextMenu = ContextMenu()
   }
 
   @MainActor

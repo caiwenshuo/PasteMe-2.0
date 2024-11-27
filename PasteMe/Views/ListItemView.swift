@@ -45,7 +45,7 @@ struct ListItemView<Title: View>: View {
       RoundedRectangle(cornerRadius: 10)
         .stroke(isSelected ? Color.blue : .clear, lineWidth: 4)
     )
-    .clipShape(RoundedRectangle(cornerRadius: 10)) // Ensure border respects corner radius
+    .clipShape(RoundedRectangle(cornerRadius: 10))
     .onHover { hovering in
       if hovering {
         if !appState.isKeyboardNavigating {

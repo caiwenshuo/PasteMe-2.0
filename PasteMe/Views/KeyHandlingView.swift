@@ -45,6 +45,9 @@ struct KeyHandlingView<Content: View>: View {
         case .clearSearch:
           searchQuery = ""
           return .handled
+        case .togglePreview:
+          appState.history.showPreview.toggle()
+          return .handled
         case .deleteCurrentItem:
           if let item = appState.history.selectedItem {
             appState.highlightNext()

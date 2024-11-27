@@ -17,6 +17,11 @@ class History { // swiftlint:disable:this type_body_length
       newValue?.isSelected = true
     }
   }
+  var showPreview = false {
+    didSet {
+      selectedItem?.showPreview = showPreview
+    }
+  }
 
   var pinnedItems: [HistoryItemDecorator] { items.filter(\.isPinned) }
   var unpinnedItems: [HistoryItemDecorator] { items.filter(\.isUnpinned) }

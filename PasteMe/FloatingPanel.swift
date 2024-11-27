@@ -124,6 +124,7 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
     isPresented = false
     statusBarButton?.isHighlighted = false
     panelState.showMenu = false
+    AppState.shared.history.showPreview = false
   }
 
   // Allow text inputs inside the panel can receive focus

@@ -28,8 +28,12 @@ class RateSubscribeHelper {
     switch self.reminderType {
     case .subscribe:
         if Store.shared.recipe?.isLocked == true {
+          rateMeInterval = 12*60*60
           openPremiumWindow()
           expiresDate = Date().addingTimeInterval(rateMeInterval)
+        }else{
+          //对于付费用户，减少点评打扰
+          rateMeInterval = 48*60*60
         }
         self.reminderType = .review
     default:

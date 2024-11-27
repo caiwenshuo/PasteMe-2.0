@@ -32,6 +32,7 @@ enum KeyChord: CaseIterable {
   case pinOrUnpin
   case selectCurrentItem
   case close
+  case togglePreview
   case unknown
 
   init(_ event: NSEvent?) {
@@ -57,6 +58,8 @@ enum KeyChord: CaseIterable {
       self = .clearHistoryAll
     case (.u, [.control]):
       self = .clearSearch
+    case (.space, []):
+      self = .togglePreview
     case (KeyChord.deleteKey, KeyChord.deleteModifiers):
       self = .deleteCurrentItem
     case (.h, [.control]):

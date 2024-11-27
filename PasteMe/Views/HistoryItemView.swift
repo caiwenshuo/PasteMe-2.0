@@ -22,5 +22,10 @@ struct HistoryItemView: View {
     .popover(isPresented: $item.showPreview, arrowEdge: .trailing) {
       PreviewItemView(item: item)
     }
+    .contextMenu(menuItems: {
+      ForEach(appState.contextMenu.items){ menuItem in
+        ContextItemView(menuItem: menuItem, historyItem: item)
+      }
+    })
   }
 }
