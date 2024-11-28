@@ -18,25 +18,30 @@ class ContextMenu {
         title: "Paste"
       ) {item in
         Task { @MainActor in
-          AppState.shared.history.select(item)
+          AppState.shared.history.copy(item)
         }
       },
       ContextMenuItem(
         title: "Paste without formatting"
-      ) {_ in
+      ) {item in
         Task { @MainActor in
-          AppState.shared.openPreferences()
+          AppState.shared.history.pasteWithoutFormatting(item)
         }
       },
       ContextMenuItem(
-        title: "Pin"
-      ) {_ in
-        AppState.shared.openContactWindow()
+        title: "Pin/Unpin"
+      ) {item in
+        Task{ @MainActor in
+          AppState.shared.history.togglePin(item)
+        }
       },
       ContextMenuItem(
         title: "Delete"
-      ) {_ in
-        AppState.shared.quit()
+      ) {item in
+        Task { @MainActor in
+          AppState.shared.highlightNext()
+          AppState.shared.history.delete(item)
+        }
       }
     ]
   }

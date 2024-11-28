@@ -213,6 +213,25 @@ class History { // swiftlint:disable:this type_body_length
       AppState.shared.popup.needsResize = true
     }
   }
+  @MainActor
+  func copy(_ item: HistoryItemDecorator){
+    AppState.shared.popup.close()
+    Clipboard.shared.copy(item.item)
+  }
+  
+  @MainActor
+  func paste(_ item: HistoryItemDecorator){
+    AppState.shared.popup.close()
+    Clipboard.shared.copy(item.item)
+    Clipboard.shared.paste()
+  }
+  
+  @MainActor
+  func pasteWithoutFormatting(_ item: HistoryItemDecorator){
+    AppState.shared.popup.close()
+    Clipboard.shared.copy(item.item, removeFormatting: true)
+    Clipboard.shared.paste()
+  }
 
   @MainActor
   func select(_ item: HistoryItemDecorator?) {
@@ -233,16 +252,11 @@ class History { // swiftlint:disable:this type_body_length
     } else {
       switch HistoryItemAction(modifierFlags) {
       case .copy:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item)
+        copy(item)
       case .paste:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item)
-        Clipboard.shared.paste()
+        paste(item)
       case .pasteWithoutFormatting:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item, removeFormatting: true)
-        Clipboard.shared.paste()
+        pasteWithoutFormatting(item)
       case .unknown:
         return
       }
