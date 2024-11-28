@@ -30,7 +30,7 @@ struct ContentView: View {
       .animation(.easeInOut(duration: 0.2), value: appState.searchVisible)
       .padding(.horizontal, 5)
       .padding(.vertical, appState.popup.verticalPadding)
-      .onAppear { searchFocused = true }
+      .onAppear { searchFocused = false }
       .onContinuousHover(coordinateSpace: .local) { _ in
         appState.isKeyboardNavigating = false
       }

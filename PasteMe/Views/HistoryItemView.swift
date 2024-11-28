@@ -3,6 +3,7 @@ import SwiftUI
 
 struct HistoryItemView: View {
   @Bindable var item: HistoryItemDecorator
+  @FocusState.Binding var searchFocused: Bool
 
   @Environment(AppState.self) private var appState
 
@@ -12,7 +13,8 @@ struct HistoryItemView: View {
       image: item.thumbnailImage ?? ColorImage.from(item.title),
       attributedTitle: item.attributedTitle,
       shortcuts: item.shortcuts,
-      isSelected: item.isSelected
+      isSelected: item.isSelected,
+      searchFocused: $searchFocused
     ) {
       Text(verbatim: item.text)
     }

@@ -15,6 +15,9 @@ struct KeyHandlingView<Content: View>: View {
         // key code and don't properly work with multiple inputs,
         // so pressing ⌘, on non-English layout doesn't open
         // preferences. Stick to NSEvent to fix this behavior.
+        guard !searchFocused else {
+            return .ignored
+        }
         switch KeyChord(NSApp.currentEvent) {
         case .clearHistory:
           if let item = appState.footer.items.first(where: { $0.title == "clear" }),

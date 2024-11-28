@@ -7,6 +7,7 @@ struct ListItemView<Title: View>: View {
   var attributedTitle: AttributedString?
   var shortcuts: [KeyShortcut]
   var isSelected: Bool
+  @FocusState.Binding var searchFocused: Bool
   var help: LocalizedStringKey?
   @ViewBuilder var title: () -> Title
 
@@ -50,6 +51,7 @@ struct ListItemView<Title: View>: View {
       if hovering {
         if !appState.isKeyboardNavigating {
           appState.selection = id
+          searchFocused = false
         } else {
           appState.hoverSelectionWhileKeyboardNavigating = id
         }

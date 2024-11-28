@@ -16,7 +16,7 @@ struct HistoryListView: View {
     if pinTo == .top {
       LazyVStack(spacing: 8) {
         ForEach(appState.history.pinnedItems.filter(\.isVisible)) { item in
-          HistoryItemView(item: item)
+          HistoryItemView(item: item, searchFocused: $searchFocused)
         }
       }
       .background {
@@ -34,7 +34,7 @@ struct HistoryListView: View {
       ScrollViewReader { proxy in
         LazyVStack(spacing: 8) {
           ForEach(appState.history.unpinnedItems) { item in
-            HistoryItemView(item: item)
+            HistoryItemView(item: item, searchFocused: $searchFocused)
           }
         }
         .task(id: appState.scrollTarget) {
@@ -50,7 +50,7 @@ struct HistoryListView: View {
         }
         .onChange(of: scenePhase) {
           if scenePhase == .active {
-            searchFocused = true
+            searchFocused = false
             appState.selection = appState.history.unpinnedItems.first?.id
           } else {
             modifierFlags.flags = []
@@ -77,7 +77,7 @@ struct HistoryListView: View {
     if pinTo == .bottom {
       LazyVStack(spacing: 8) {
         ForEach(appState.history.pinnedItems.filter(\.isVisible)) { item in
-          HistoryItemView(item: item)
+          HistoryItemView(item: item, searchFocused: $searchFocused)
         }
       }
       .background {

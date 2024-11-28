@@ -7,19 +7,24 @@ struct HeaderView: View {
 
   @Environment(AppState.self) private var appState
   @Environment(\.scenePhase) private var scenePhase
+  @State var fakeQuery = ""
   
   //避免关闭Panel后下次打开，popover依然打开的问题
   @EnvironmentObject private var panelState: PanelState
+  @FocusState private var inverseFocusState: Bool
+
 
   var body: some View {
     HStack {
-      SearchFieldView(placeholder: "search_placeholder", query: $searchQuery)
+      SearchFieldView(placeholder: "search_placeholder", query: $searchQuery, searchFocused: $searchFocused)
         .focused($searchFocused)
         .frame(maxWidth: .infinity)
-        .onChange(of: scenePhase) {
-          if scenePhase == .background && !searchQuery.isEmpty {
-            searchQuery = ""
-          }
+
+      //不可见的SearchView以获取焦点，才可以触发space等快捷键
+      SearchFieldView(placeholder: "search_placeholder", query: $fakeQuery, searchFocused: $inverseFocusState)
+        .focused($inverseFocusState)
+        .frame(width: 0, height: 0).opacity(0).onChange(of: searchFocused) { newValue in
+          inverseFocusState = !newValue
         }
       Image(systemName: "ellipsis").resizable().aspectRatio(contentMode: .fit).frame(width: 15, height: 15).contentShape(Rectangle()).onTapGesture {
         panelState.showMenu.toggle()
