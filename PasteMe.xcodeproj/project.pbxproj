@@ -14,6 +14,11 @@
 		4762D6972467226100B3A2BA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4762D6992467226100B3A2BA /* Localizable.strings */; };
 		81E190012CED729D006C9D0A /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E190002CED729D006C9D0A /* Sorter.swift */; };
 		81E190032CEE2166006C9D0A /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E190022CEE2166006C9D0A /* ContactView.swift */; };
+		81E84AAD2CF2C90500D9296F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E84AAC2CF2C90500D9296F /* Store.swift */; };
+		81E84AAF2CF2C9A800D9296F /* PremiumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E84AAE2CF2C9A800D9296F /* PremiumView.swift */; };
+		81E84AB22CF2CA2F00D9296F /* Purchases in Frameworks */ = {isa = PBXBuildFile; productRef = 81E84AB12CF2CA2F00D9296F /* Purchases */; };
+		81E84AB42CF2CF9000D9296F /* RateSubscribeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E84AB32CF2CF9000D9296F /* RateSubscribeHelper.swift */; };
+		81E84AB62CF2D25300D9296F /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E84AB52CF2D25300D9296F /* ReviewView.swift */; };
 		DA009931256411F90030E697 /* appcast.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA00992C256411F90030E697 /* appcast.xml */; };
 		DA009932256411F90030E697 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA00992D256411F90030E697 /* README.md */; };
 		DA009934256411F90030E697 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA00992F256411F90030E697 /* LICENSE */; };
@@ -164,6 +169,10 @@
 		7CEEFDF124F41F8500ECAD2A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		81E190002CED729D006C9D0A /* Sorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorter.swift; sourceTree = "<group>"; };
 		81E190022CEE2166006C9D0A /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		81E84AAC2CF2C90500D9296F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		81E84AAE2CF2C9A800D9296F /* PremiumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumView.swift; sourceTree = "<group>"; };
+		81E84AB32CF2CF9000D9296F /* RateSubscribeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateSubscribeHelper.swift; sourceTree = "<group>"; };
+		81E84AB52CF2D25300D9296F /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		ABC72863283A9053001EE086 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA00992C256411F90030E697 /* appcast.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = appcast.xml; sourceTree = "<group>"; };
 		DA00992D256411F90030E697 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -480,6 +489,7 @@
 				DA5F46512020E9FB00425C11 /* Carbon.framework in Frameworks */,
 				DA13D7D02C19F8C300FA9E23 /* Defaults in Frameworks */,
 				DA009947256414800030E697 /* SwiftHEXColors in Frameworks */,
+				81E84AB22CF2CA2F00D9296F /* Purchases in Frameworks */,
 				DA5154D82564102900C01004 /* Sauce in Frameworks */,
 				2F39CB0A2AD9AE1F00B749FD /* Settings in Frameworks */,
 				DA13D7CA2C19F52B00FA9E23 /* LaunchAtLogin in Frameworks */,
@@ -581,6 +591,8 @@
 				DA1969172C3F327500258481 /* SearchFieldView.swift */,
 				DAA072D02C4089D3006DDFD2 /* VisualEffectView.swift */,
 				81E190022CEE2166006C9D0A /* ContactView.swift */,
+				81E84AAE2CF2C9A800D9296F /* PremiumView.swift */,
+				81E84AB52CF2D25300D9296F /* ReviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -692,6 +704,7 @@
 				DA19690C2C3EEF9300258481 /* Views */,
 				DA6D98E12AEABE03008A77CE /* Accessibility.swift */,
 				DAEE38461E3DBEB100DD2966 /* AppDelegate.swift */,
+				81E84AAC2CF2C90500D9296F /* Store.swift */,
 				DAB082952A2B7B850053E463 /* AppStoreReview.swift */,
 				DA0EF1871E444B2A00E58577 /* Clipboard.swift */,
 				DAE284FF232257D20080E394 /* ColorImage.swift */,
@@ -714,6 +727,7 @@
 				4762D6992467226100B3A2BA /* Localizable.strings */,
 				2F1A79BF2C6DFB7800C98EBD /* SearchVisibility.swift */,
 				81E190002CED729D006C9D0A /* Sorter.swift */,
+				81E84AB32CF2CF9000D9296F /* RateSubscribeHelper.swift */,
 			);
 			path = PasteMe;
 			sourceTree = "<group>";
@@ -779,6 +793,7 @@
 				DA13D7C92C19F52B00FA9E23 /* LaunchAtLogin */,
 				DA13D7CF2C19F8C300FA9E23 /* Defaults */,
 				DAC0CA3D2C88E7A4003BF498 /* Fuse */,
+				81E84AB12CF2CA2F00D9296F /* Purchases */,
 			);
 			productName = Maccy;
 			productReference = DAEE38431E3DBEB100DD2966 /* PasteMe.app */;
@@ -853,6 +868,7 @@
 				DA13D7C82C19F43E00FA9E23 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 				DA13D7CE2C19F8C300FA9E23 /* XCRemoteSwiftPackageReference "Defaults" */,
 				DAC0CA3C2C88E7A4003BF498 /* XCRemoteSwiftPackageReference "fuse-swift" */,
+				81E84AB02CF2CA2F00D9296F /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			productRefGroup = DAEE38441E3DBEB100DD2966 /* Products */;
 			projectDirPath = "";
@@ -934,6 +950,7 @@
 				DA19691C2C3F3EAC00258481 /* Collection+Surrounding.swift in Sources */,
 				DA1969142C3F11D600258481 /* PreviewItemView.swift in Sources */,
 				DAA072D52C40AC52006DDFD2 /* HistoryListView.swift in Sources */,
+				81E84AAD2CF2C90500D9296F /* Store.swift in Sources */,
 				DAB082962A2B7B850053E463 /* AppStoreReview.swift in Sources */,
 				DA13D7D22C19F91B00FA9E23 /* Defaults.Keys+Names.swift in Sources */,
 				DA1969102C3F0AAC00258481 /* KeyShortcut.swift in Sources */,
@@ -948,6 +965,7 @@
 				DA13D7D82C1A223E00FA9E23 /* Select.swift in Sources */,
 				DA689FC82C1D15140009B887 /* PinsPosition.swift in Sources */,
 				DA13D7D92C1A223E00FA9E23 /* Get.swift in Sources */,
+				81E84AB42CF2CF9000D9296F /* RateSubscribeHelper.swift in Sources */,
 				DA1969182C3F327500258481 /* SearchFieldView.swift in Sources */,
 				DAE8F5D42C43262B00851CA9 /* Popup.swift in Sources */,
 				DA13D7DA2C1A223E00FA9E23 /* Clear.swift in Sources */,
@@ -1002,8 +1020,10 @@
 				DAFE2DDA268A521B00990986 /* String+Shortened.swift in Sources */,
 				DAC14124232367B200FCFA30 /* Search.swift in Sources */,
 				DA0FFA2A2C8D100C00A66C97 /* ModifierFlags+Description.swift in Sources */,
+				81E84AAF2CF2C9A800D9296F /* PremiumView.swift in Sources */,
 				DAEE38471E3DBEB100DD2966 /* AppDelegate.swift in Sources */,
 				DAA072DF2C41C63C006DDFD2 /* ConfirmationView.swift in Sources */,
+				81E84AB62CF2D25300D9296F /* ReviewView.swift in Sources */,
 				DAA365CE2C4BF9DD00A394F8 /* PinsSettingsPane.swift in Sources */,
 				DA3BCB8E2C3E015000B01BC1 /* ModifierFlags.swift in Sources */,
 				DA181177247D14DA00066D55 /* Settings.PaneIdentifier+Panes.swift in Sources */,
@@ -1629,6 +1649,14 @@
 				minimumVersion = 3.1.1;
 			};
 		};
+		81E84AB02CF2CA2F00D9296F /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 3.14.3;
+			};
+		};
 		DA009945256414800030E697 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thii/SwiftHEXColors";
@@ -1684,6 +1712,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F39CB082AD9AE1F00B749FD /* XCRemoteSwiftPackageReference "Settings" */;
 			productName = Settings;
+		};
+		81E84AB12CF2CA2F00D9296F /* Purchases */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81E84AB02CF2CA2F00D9296F /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = Purchases;
 		};
 		DA009946256414800030E697 /* SwiftHEXColors */ = {
 			isa = XCSwiftPackageProductDependency;

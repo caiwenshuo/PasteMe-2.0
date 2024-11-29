@@ -1,6 +1,8 @@
 import Defaults
 import KeyboardShortcuts
 import SwiftUI
+import Purchases
+
 
 class AppDelegate: NSObject, NSApplicationDelegate {
   var panel: FloatingPanel<ContentView>!
@@ -81,6 +83,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     migrateUserDefaults()
     disableUnusedGlobalHotkeys()
+
+    Purchases.configure(withAPIKey: "appl_VEdlmDnfkhvUhkIZBqypmsNimwL")
+    Store.shared.startUpFetchProduct()
 
     panel = FloatingPanel(
       contentRect: NSRect(origin: .zero, size: Defaults[.windowSize]),

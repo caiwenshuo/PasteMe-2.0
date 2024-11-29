@@ -28,3 +28,5 @@
 "paste_modifiers_config" = "• Pasirinkite paspaudę %@, kad nukopijuotumėte ir įklijuotumėte elementą.";
 "accessibility_alert_comment" = "Suteikite prieigą šiai programai {pane}, esančiai {settings}.\n\nSpustelėjimas + mygtukas, pasirinkite PasteMe ir pažymėkite šalia esantį žymimąjį langelį.";
 "clear_alert_confirm" = "Išvalyti";
+"contact_developer" = "Susisiekite su kūrėju";
+"ms" = "Milisekundė";

@@ -28,3 +28,5 @@
 "about" = "O aplikaci";
 "copy_modifiers_config" = "• Vyber se stisknutím %@ pro zkopírování položky.";
 "format_modifiers_config" = "• Vyber se stisknutím %@ pro zkopírování, odstranění formátování a vložení položky.";
+"contact_developer" = "Kontaktujte vývojáře"; 
+"ms" = "Milisekunda";

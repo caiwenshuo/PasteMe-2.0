@@ -28,3 +28,5 @@
 "system_settings_pane" = "Datenschutz & Sicherheit";
 "system_preferences_name" = "Systemeinstellungen";
 "system_preferences_pane" = "Sicherheit & Datenschutz";
+"contact_developer" = "Entwickler kontaktieren";
+"ms" = "Millisekunde"; 

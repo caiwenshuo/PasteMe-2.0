@@ -28,3 +28,5 @@
 "screen" = "Képernyő";
 "system_settings_pane" = "Adatvédelem és biztonság";
 "system_preferences_name" = "Rendszerbeállítások";
+"contact_developer" = "Lépjen kapcsolatba a fejlesztővel"; 
+"ms" = "Milliszekundum";

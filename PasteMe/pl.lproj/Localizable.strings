@@ -28,3 +28,5 @@
 "clear" = "Wyczyść";
 "accessibility_alert_comment" = "Daj dostęp tej aplikacji w {pane}, w {settings}.\n\nKliknij przycisk +, wybierz PasteMe i kliknij przełącznik obok.";
 "clear_alert_comment" = "Nie możesz cofnąć tej akcji.";
+"contact_developer" = "Skontaktuj się z deweloperem"; 
+"ms" = "Milisekunda";

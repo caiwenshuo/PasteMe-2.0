@@ -22,6 +22,7 @@ extension Defaults.Keys {
   static let ignoreOnlyNextEvent = Key<Bool>("ignoreOnlyNextEvent", default: false)
   static let ignoreRegexp = Key<[String]>("ignoreRegexp", default: [])
   static let ignoredApps = Key<[String]>("ignoredApps", default: [])
+  static let hasRate = Key<Bool>("hasRate", default: false)
   static let ignoredPasteboardTypes = Key<Set<String>>(
     "ignoredPasteboardTypes",
     default: Set([

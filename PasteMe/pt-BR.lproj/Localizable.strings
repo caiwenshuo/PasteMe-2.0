@@ -28,3 +28,5 @@
 "format_modifiers_config" = "• Selecione com %@ pressionado para copiar, limpar a formatação e colar o item.";
 "accessibility_alert_comment" = "Conceda acesso a este aplicativo em {pane}, localizado em {settings}.\n\nClique + botão, selecione PasteMe e ative a caixa de seleção próxima a ele.";
 "system_preferences_name" = "Preferências do Sistema";
+"contact_developer" = "Contactar o desenvolvedor"; 
+"ms" = "Milissegundo";

@@ -140,6 +140,7 @@ class Clipboard {
     keyVUp?.flags = cmdFlag
     keyVDown?.post(tap: .cgSessionEventTap)
     keyVUp?.post(tap: .cgSessionEventTap)
+    RateSubscribeHelper.shared.check()
   }
 
   func clear() {
