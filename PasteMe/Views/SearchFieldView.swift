@@ -8,6 +8,7 @@ struct SearchFieldView: View {
     @State private var inputText: String = ""
     @FocusState.Binding var searchFocused: Bool
     @Environment(\.scenePhase) private var scenePhase
+    @EnvironmentObject private var panelState: PanelState
 
     var body: some View {
         ZStack {
@@ -25,6 +26,14 @@ struct SearchFieldView: View {
                 TextField(placeholder, text: $inputText, onCommit: {
                     query = inputText
                     searchFocused = false
+                })
+                .onChange(of: searchFocused, { oldValue, newValue in
+                  print("onChange first")
+                  panelState.searchFocused = newValue
+                })
+                .onChange(of: panelState.searchFocused, { oldValue, newValue in
+                  print("onChange second")
+                  searchFocused = newValue
                 })
                 .disableAutocorrection(true)
                 .lineLimit(1)

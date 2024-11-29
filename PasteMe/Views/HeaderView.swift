@@ -15,15 +15,16 @@ struct HeaderView: View {
 
 
   var body: some View {
-    HStack {
+    HStack(spacing: 0) {
       SearchFieldView(placeholder: "search_placeholder", query: $searchQuery, searchFocused: $searchFocused)
         .focused($searchFocused)
         .frame(maxWidth: .infinity)
-
+        .padding(.trailing, 10)
       //不可见的SearchView以获取焦点，才可以触发space等快捷键
-      SearchFieldView(placeholder: "search_placeholder", query: $fakeQuery, searchFocused: $inverseFocusState)
+      Text("123").focusable()
+//      SearchFieldView(placeholder: "search_placeholder", query: $fakeQuery, searchFocused: $inverseFocusState)
         .focused($inverseFocusState)
-        .frame(width: 0, height: 0).opacity(0).onChange(of: searchFocused) { newValue in
+        .frame(width: 0.1, height: 0.1).opacity(0).onChange(of: searchFocused) { newValue in
           inverseFocusState = !newValue
         }
       Image(systemName: "ellipsis").resizable().aspectRatio(contentMode: .fit).frame(width: 15, height: 15).contentShape(Rectangle()).onTapGesture {

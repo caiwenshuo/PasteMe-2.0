@@ -64,6 +64,10 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
       close()
     } else {
       open(height: height, at: popupPosition)
+      //TextField会自动获取焦点，且获取焦点的时机晚于panel打开，所以需要加一个延迟
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
+        self.panelState.searchFocused = false
+      }
     }
   }
 
@@ -133,5 +137,6 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
   }
 }
 class PanelState: ObservableObject {
-    @Published var showMenu: Bool = false
+  @Published var showMenu: Bool = false
+  @Published var searchFocused: Bool = false
 }
