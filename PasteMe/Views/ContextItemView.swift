@@ -13,6 +13,17 @@ struct ContextItemView: View {
     let menuItem: ContextMenuItem
     let historyItem: HistoryItemDecorator
     var body: some View {
+      if menuItem.title == "Preview" {
+        Button {
+          menuItem.action(historyItem)
+        } label: {
+          if menuItem.title == "Preview" {
+            Text(AppState.shared.history.showPreview ? "Hide preview" : "Preview")
+          } else {
+            Text(menuItem.title)
+          }
+        }.keyboardShortcut(.space, modifiers: [])
+      } else {
         Button {
           menuItem.action(historyItem)
         } label: {
@@ -22,5 +33,7 @@ struct ContextItemView: View {
             Text(menuItem.title)
           }
         }
+      }
+        
     }
 }
