@@ -18,3 +18,5 @@
 "Regex" = "Regularni izrazi";
 "Mixed" = "Miješano";
 "NotificationsAndSounds" = "Obavještenja i zvukovi 􀱁";
+"Preview" = "Pregled";
+"PreviewTooltip" = "Prečica za pregled cijelog sadržaja stavke iz povijesti.\nZadano: razmaknica.";

@@ -18,3 +18,5 @@
 "CheckForUpdates" = "Automatycznie sprawdzaj aktualizacje";
 "CheckNow" = "Sprawdź teraz";
 "Open" = "Otwórz:";
+"Preview" = "Podgląd";
+"PreviewTooltip" = "Skrót klawiszowy do podglądu pełnej zawartości elementu historii.\nDomyślnie: spacja.";

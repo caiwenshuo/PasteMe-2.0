@@ -18,3 +18,5 @@
 "Pin" = "Kitűzés:";
 "PinTooltip" = "Gyorsbillentyű az előzmény elem kitűzéséhez.\nAlapértelmezett: ⌥P.";
 "Modifiers" = "Viselkedés testreszabása az elem kiválasztásakor:\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz es a beillesztéshez.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz, a formázások törléséhez és a beillesztéshez.";
+"Preview" = "Előnézet";
+"PreviewTooltip" = "Gyorsbillentyű a történelem elemének teljes tartalmának megtekintéséhez.\nAlapértelmezett: szóköz.";

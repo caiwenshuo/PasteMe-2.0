@@ -30,3 +30,9 @@
 "system_preferences_pane" = "تفضيلات الأمان والخصوصية";
 "contact_developer" = "اتصل بالمطور"; // 阿拉伯语 (Arabic)
 "ms" = "مللي ثانية";
+"Preview" = "معاينة";
+"Hide preview" = "إخفاء المعاينة";
+"Paste" = "لصق";
+"Paste without formatting" = "لصق بدون تنسيق";
+"Pin/Unpin" = "تثبيت/إلغاء التثبيت";
+"Delete" = "حذف";

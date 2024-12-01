@@ -30,3 +30,9 @@
 "system_preferences_pane" = "Sicherheit & Datenschutz";
 "contact_developer" = "Entwickler kontaktieren";
 "ms" = "Millisekunde"; 
+"Preview" = "Vorschau";
+"Hide preview" = "Vorschau ausblenden";
+"Paste" = "Einfügen";
+"Paste without formatting" = "Einfügen ohne Formatierung";
+"Pin/Unpin" = "Anheften/Abheften";
+"Delete" = "Löschen";

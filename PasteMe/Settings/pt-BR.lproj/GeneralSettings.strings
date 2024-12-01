@@ -18,3 +18,5 @@
 "Regex" = "Expressões regulares";
 "Mixed" = "Mista";
 "NotificationsAndSounds" = "Notificações e sons 􀱁";
+"Preview" = "Visualizar";
+"PreviewTooltip" = "Tecla de atalho para visualizar o conteúdo completo do item histórico.\nPadrão: barra de espaço.";

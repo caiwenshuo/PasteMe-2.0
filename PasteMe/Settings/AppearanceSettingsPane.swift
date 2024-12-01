@@ -113,16 +113,16 @@ struct AppearanceSettingsPane: View {
 //        }
 //      }
 
-      Settings.Section(label: { Text("PreviewDelay", tableName: "AppearanceSettings") }) {
-        HStack {
-          TextField("", value: $previewDelay, formatter: previewDelayFormatter)
-            .frame(width: 120)
-            .help(Text("PreviewDelayTooltip", tableName: "AppearanceSettings"))
-          Stepper("", value: $previewDelay, in: 200...100_000)
-            .labelsHidden()
-          Text("ms", tableName: "AppearanceSettings")
-        }
-      }
+//      Settings.Section(label: { Text("PreviewDelay", tableName: "AppearanceSettings") }) {
+//        HStack {
+//          TextField("", value: $previewDelay, formatter: previewDelayFormatter)
+//            .frame(width: 120)
+//            .help(Text("PreviewDelayTooltip", tableName: "AppearanceSettings"))
+//          Stepper("", value: $previewDelay, in: 200...100_000)
+//            .labelsHidden()
+//          Text("ms", tableName: "AppearanceSettings")
+//        }
+//      }
 
       Settings.Section(title: "") {
         Defaults.Toggle(key: .showSpecialSymbols) {

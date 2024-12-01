@@ -30,3 +30,9 @@
 "clear_alert_comment" = "Nie możesz cofnąć tej akcji.";
 "contact_developer" = "Skontaktuj się z deweloperem"; 
 "ms" = "Milisekunda";
+"Preview" = "Podgląd";
+"Hide preview" = "Ukryj podgląd";
+"Paste" = "Wklej";
+"Paste without formatting" = "Wklej bez formatowania";
+"Pin/Unpin" = "Przypnij/Odczep";
+"Delete" = "Usuń";

@@ -30,3 +30,9 @@
 "system_preferences_pane" = "「安全性和隱私權」";
 "contact_developer" = "聯絡開發者"; 
 "ms" = "毫秒";
+"Preview" = "預覽";
+"Hide preview" = "隱藏預覽";
+"Paste" = "貼上";
+"Paste without formatting" = "貼上不帶格式";
+"Pin/Unpin" = "固定/取消固定";
+"Delete" = "刪除";

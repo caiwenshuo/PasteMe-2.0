@@ -30,3 +30,9 @@
 "system_preferences_pane" = "Sigurnosti i privatnosti";
 "contact_developer" = "Kontaktirajte programera"; 
 "ms" = "Milisekunda";
+"Preview" = "Pregled";
+"Hide preview" = "Sakrij pregled";
+"Paste" = "Zalijepi";
+"Paste without formatting" = "Zalijepi bez formatiranja";
+"Pin/Unpin" = "Pinuj/Odveži";
+"Delete" = "Obriši";

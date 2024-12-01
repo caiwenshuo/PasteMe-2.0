@@ -30,3 +30,9 @@
 "system_preferences_pane" = "Sikkerhet & Personvern";
 "contact_developer" = "Kontakt utvikler"; 
 "ms" = "Millisekund";
+"Preview" = "Forhåndsvisning";
+"Hide preview" = "Skjul forhåndsvisning";
+"Paste" = "Lim inn";
+"Paste without formatting" = "Lim inn uten formatering";
+"Pin/Unpin" = "Fest/Fjern festing";
+"Delete" = "Slett";

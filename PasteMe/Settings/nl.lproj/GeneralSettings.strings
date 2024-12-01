@@ -18,3 +18,6 @@
 "Regex" = "Reguliere expressies";
 "Mixed" = "Mixed";
 "NotificationsAndSounds" = "Meldingen en geluiden 􀱁";
+"Preview" = "Voorvertoning";
+"PreviewTooltip" = "Sneltoets om de volledige inhoud van een historisch item te bekijken.\nStandaard: spatiebalk.";
+

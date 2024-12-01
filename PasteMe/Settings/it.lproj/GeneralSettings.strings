@@ -18,3 +18,5 @@
 "Regex" = "Espressioni regolari";
 "Mixed" = "Mista";
 "NotificationsAndSounds" = "Notifiche e suoni 􀱁";
+"Preview" = "Anteprima";
+"PreviewTooltip" = "Tasto di scelta rapida per visualizzare il contenuto completo dell'elemento storico.\nPredefinito: barra spaziatrice.";

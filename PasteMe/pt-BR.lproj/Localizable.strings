@@ -30,3 +30,9 @@
 "system_preferences_name" = "Preferências do Sistema";
 "contact_developer" = "Contactar o desenvolvedor"; 
 "ms" = "Milissegundo";
+"Preview" = "Visualizar";
+"Hide preview" = "Ocultar visualização";
+"Paste" = "Colar";
+"Paste without formatting" = "Colar sem formatação";
+"Pin/Unpin" = "Fixar/Desfixar";
+"Delete" = "Excluir";

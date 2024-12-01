@@ -122,6 +122,7 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
       close()
     }
   }
+  
 
   override func close() {
     super.close()

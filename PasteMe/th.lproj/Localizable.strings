@@ -30,3 +30,9 @@
 "system_preferences_pane" = "ความปลอดภัยและความเป็นส่วนตัว";
 "contact_developer" = "ติดต่อผู้พัฒนา";
 "ms" = "มิลลิวินาที"; 
+"Preview" = "ดูตัวอย่าง";
+"Hide preview" = "ซ่อนตัวอย่าง";
+"Paste" = "วาง";
+"Paste without formatting" = "วางโดยไม่ใช้รูปแบบ";
+"Pin/Unpin" = "ปักหมุด/ยกเลิกปักหมุด";
+"Delete" = "ลบ";

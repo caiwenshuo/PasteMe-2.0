@@ -28,3 +28,9 @@
 "system_settings_pane" = "Privacy & Security settings";
 "system_preferences_name" = "System Preferences";
 "system_preferences_pane" = "Security & Privacy preferences";
+"Preview" = "Preview";
+"Paste" = "Paste";
+"Hide preview" = "Hide preview";
+"Paste without formatting" = "Paste without formatting";
+"Pin/Unpin" = "Pin/Unpin";
+"Delete" = "Delete";

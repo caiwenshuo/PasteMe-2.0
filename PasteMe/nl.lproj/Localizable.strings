@@ -30,3 +30,9 @@
 "system_preferences_pane" = "Beveiliging en Privacyvoorkeuren";
 "contact_developer" = "Neem contact op met de ontwikkelaar"; 
 "ms" = "Milliseconde";
+"Voorvertoning";
+"Hide preview" = "Verberg voorvertoning";
+"Paste" = "Plakken";
+"Paste without formatting" = "Plakken zonder opmaak";
+"Pin/Unpin" = "Vastzetten/Ontkoppelen";
+"Delete" = "Verwijderen";

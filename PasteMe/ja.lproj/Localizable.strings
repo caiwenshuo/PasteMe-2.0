@@ -30,3 +30,9 @@
 "system_preferences_pane" = "“セキュリティとプライバシー”";
 "contact_developer" = "開発者に連絡する"; 
 "ms" = "ミリ秒";
+"プレビュー";
+"Hide preview" = "プレビューを非表示";
+"Paste" = "貼り付け";
+"Paste without formatting" = "書式なしで貼り付け";
+"Pin/Unpin" = "ピン留め/ピン留め解除";
+"Delete" = "削除";

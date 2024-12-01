@@ -30,3 +30,9 @@
 "system_preferences_name" = "Rendszerbeállítások";
 "contact_developer" = "Lépjen kapcsolatba a fejlesztővel"; 
 "ms" = "Milliszekundum";
+"Preview" = "Előnézet";
+"Hide preview" = "Rejtsd el előnézetet";
+"Paste" = "Beillesztés";
+"Paste without formatting" = "Beillesztés formázás nélkül";
+"Pin/Unpin" = "Rögzítés/Leválasztás";
+"Delete" = "Törlés";

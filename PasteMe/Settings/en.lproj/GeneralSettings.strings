@@ -8,6 +8,8 @@
 "PinTooltip" = "Shortcut key to pin history item.\nDefault: ⌥P.";
 "Delete" = "Delete:";
 "DeleteTooltip" = "Shortcut key to delete history item.\nDefault: ⌥⌫.";
+"Preview" = "Preview:";
+"PreviewTooltip" = "Shortcut key to preview the full content of history item.\nDefault: space.";
 "Behavior" = "Behavior:";
 "PasteAutomatically" = "Paste automatically";
 "PasteWithoutFormatting" = "Paste without formatting";

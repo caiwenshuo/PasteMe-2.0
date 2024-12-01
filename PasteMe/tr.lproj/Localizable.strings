@@ -30,3 +30,9 @@
 "system_preferences_pane" = "Güvenlik ve Gizlilik Tercihleri";
 "contact_developer" = "Geliştiriciyle iletişim kur";
 "ms" = "Milisaniye";
+"Preview" = "Önizleme";
+"Hide preview" = "Önizlemeyi gizle";
+"Paste" = "Yapıştır";
+"Paste without formatting" = "Biçimsiz yapıştır";
+"Pin/Unpin" = "Sabitle/Sabitleme";
+"Delete" = "Sil";

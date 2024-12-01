@@ -30,3 +30,9 @@
 "system_preferences_pane" = "보안 및 개인";
 "contact_developer" = "개발자에게 문의하기"; 
 "ms" = "밀리초";
+"미리 보기";
+"Hide preview" = "미리 보기 숨기기";
+"Paste" = "붙여넣기";
+"Paste without formatting" = "서식 없이 붙여넣기";
+"Pin/Unpin" = "고정/고정 해제";
+"Delete" = "삭제";

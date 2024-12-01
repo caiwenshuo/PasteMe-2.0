@@ -18,3 +18,5 @@
 "Regex" = "Expressions régulières";
 "Mixed" = "Mixte";
 "NotificationsAndSounds" = "Notifications et sons 􀱁";
+"Preview" = "Aperçu";
+"PreviewTooltip" = "Raccourci pour prévisualiser le contenu complet de l'élément d'historique.\nPar défaut : barre d'espace.";

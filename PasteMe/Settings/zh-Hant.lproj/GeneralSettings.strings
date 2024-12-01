@@ -18,3 +18,5 @@
 "Regex" = "正規表示式";
 "Mixed" = "混合";
 "NotificationsAndSounds" = "通知和聲音 􀱁";
+"Preview" = "預覽";
+"PreviewTooltip" = "預覽歷史項目的完整內容的快捷鍵。\n預設：空格鍵。";

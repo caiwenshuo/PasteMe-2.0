@@ -30,3 +30,9 @@
 "system_preferences_pane" = "«Защита и безопасность»";
 "contact_developer" = "Связаться с разработчиком"; 
 "ms" = "Миллисекунда";
+"Preview" = "Предпросмотр";
+"Hide preview" = "Скрыть предпросмотр";
+"Paste" = "Вставить";
+"Paste without formatting" = "Вставить без форматирования";
+"Pin/Unpin" = "Закрепить/Открепить";
+"Delete" = "Удалить";

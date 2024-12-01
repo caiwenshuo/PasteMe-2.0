@@ -30,3 +30,9 @@
 "accessibility_alert_message" = "“PasteMe” vēlas kontrolēt šo datoru, izmantojot pieejamības līdzekļus.";
 "contact_developer" = "Sazinieties ar izstrādātāju"; 
 "ms" = "Milisekunde";
+"Preview" = "Priekšskatījums";
+"Hide preview" = "Paslēpt priekšskatījumu";
+"Paste" = "Ielīmēt";
+"Paste without formatting" = "Ielīmēt bez formatējuma";
+"Pin/Unpin" = "Piestiprināt/Atspiest";
+"Delete" = "Dzēst";

@@ -18,3 +18,5 @@
 "Regex" = "Düzenli ifadeler";
 "Mixed" = "Karışık";
 "NotificationsAndSounds" = "Bildirimler ve sesler 􀱁";
+"Preview" = "Önizleme";
+"PreviewTooltip" = "Geçmiş öğesinin tam içeriğini önizlemek için kısayol tuşu.\nVarsayılan: boşluk tuşu.";

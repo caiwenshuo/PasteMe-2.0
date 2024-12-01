@@ -18,3 +18,5 @@
 "Regex" = "정규식";
 "Mixed" = "혼합";
 "NotificationsAndSounds" = "알림 및 소리 􀱁";
+"Preview" = "미리 보기";
+"PreviewTooltip" = "히스토리 항목의 전체 내용을 미리 보는 단축키.\n기본값: 스페이스바.";

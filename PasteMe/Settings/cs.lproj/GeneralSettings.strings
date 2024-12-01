@@ -18,3 +18,5 @@
 "Regex" = "Regulární výrazy";
 "Mixed" = "Smíšené";
 "NotificationsAndSounds" = "Notifikace a zvuky 􀱁";
+"Preview" = "Náhled";
+"PreviewTooltip" = "Klávesová zkratka pro náhled plného obsahu položky historie.\nVýchozí: mezerník.";

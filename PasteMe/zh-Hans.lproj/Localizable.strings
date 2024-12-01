@@ -54,3 +54,9 @@
 "Connecting..." = "连接中...";
 "Restore failed. Try again later." = "恢复购买失败。请稍后再试。";
 "Try again" = "重试";
+"Preview" = "预览";
+"Hide preview" = "隐藏预览";
+"Paste" = "粘贴";
+"Paste without formatting" = "粘贴无格式";
+"Pin/Unpin" = "固定/取消固定";
+"Delete" = "删除";

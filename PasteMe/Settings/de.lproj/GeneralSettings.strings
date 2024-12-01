@@ -18,3 +18,5 @@
 "Regex" = "Reguläre Ausdrücke";
 "Mixed" = "Gemischt";
 "NotificationsAndSounds" = "Benachrichtigungen und Töne 􀱁";
+"Preview" = "Vorschau";
+"PreviewTooltip" = "Tastenkürzel zum Vorschauen des gesamten Inhalts des historischen Elements.\nStandardmäßig: Leertaste.";

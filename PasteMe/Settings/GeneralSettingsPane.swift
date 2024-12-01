@@ -33,12 +33,19 @@ struct GeneralSettingsPane: View {
           .help(Text("PinTooltip", tableName: "GeneralSettings"))
       }
       Settings.Section(
-        bottomDivider: true,
         label: { Text("Delete", tableName: "GeneralSettings") }
       ) {
         KeyboardShortcuts.Recorder(for: .delete)
           .help(Text("DeleteTooltip", tableName: "GeneralSettings"))
       }
+      Settings.Section(
+        bottomDivider: true,
+        label: { Text("Preview", tableName: "GeneralSettings") }
+      ) {
+        KeyboardShortcuts.Recorder(for: .preview)
+          .help(Text("PreviewTooltip", tableName: "GeneralSettings"))
+      }
+      
 
       Settings.Section(
         bottomDivider: true,

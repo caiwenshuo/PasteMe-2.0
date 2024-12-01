@@ -30,3 +30,9 @@
 "format_modifiers_config" = "• Vyber se stisknutím %@ pro zkopírování, odstranění formátování a vložení položky.";
 "contact_developer" = "Kontaktujte vývojáře"; 
 "ms" = "Milisekunda";
+"Preview" = "Náhled";
+"Hide preview" = "Skrýt náhled";
+"Paste" = "Vložit";
+"Paste without formatting" = "Vložit bez formátování";
+"Pin/Unpin" = "Připnout/Odpinout";
+"Delete" = "Smazat";
