@@ -72,6 +72,7 @@ class FloatingPanel<Content: View>: NSPanel, NSWindowDelegate {
   }
 
   func open(height: CGFloat, at popupPosition: PopupPosition = Defaults[.popupPosition]) {
+    EventTracker.shared.trackEvent(key: EventKey.appUse.rawValue)
     setContentSize(NSSize(width: frame.width, height: min(height, Defaults[.windowSize].height)))
     setFrameOrigin(popupPosition.origin(size: frame.size, statusBarButton: statusBarButton))
     orderFrontRegardless()

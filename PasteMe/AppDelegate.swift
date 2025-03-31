@@ -84,6 +84,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     migrateUserDefaults()
     disableUnusedGlobalHotkeys()
 
+    Purchases.proxyURL = URL(string: "https://revenuecatproxy-aquulrbrfd.ap-northeast-1.fcapp.run")!
     Purchases.configure(withAPIKey: "appl_VEdlmDnfkhvUhkIZBqypmsNimwL")
     Store.shared.startUpFetchProduct()
 

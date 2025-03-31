@@ -62,18 +62,23 @@ struct PremiumView: View {
                         Text("Only")
                             Text(" \(price) ")
                         Text("for life time")
-                    }.font(Font.headline)
+                    }.font(Font.headline).onAppear{
+                        EventTracker.shared.trackEvent(key: EventKey.subscripionViewPriceShow.rawValue)
+                    }
                 }else{
                     HStack(spacing:0){
                         Text("Only")
                         Text("--").font(Font.headline)
                         Text("for life time")
+                    }.onAppear{
+                        EventTracker.shared.trackEvent(key: EventKey.subscriptionViewPriceFail.rawValue)
                     }
                     Text("No commitment. Cancel any time.")
                 }
                 VStack(spacing: 7){
                   Text("Continue").padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300).background(Color(NSColor(named: "Premium")!)).foregroundColor(.white).cornerRadius(7)
                         .onTapGesture {
+                        EventTracker.shared.trackEvent(key: EventKey.subscripionButtonClick.rawValue)
                         store.purchaseProduct()
                     }
                   Text("Skip and use the free version for 12 hours").multilineTextAlignment(.center).padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300).background(
@@ -111,7 +116,9 @@ struct PremiumView: View {
                     }
                 }.padding().padding(.horizontal, 40)
             }
-        }.frame(width: 450, height: 700).background(Color(NSColor.windowBackgroundColor)).environment(\.colorScheme, .light)
+        }.frame(width: 450, height: 700).background(Color(NSColor.windowBackgroundColor)).environment(\.colorScheme, .light).onAppear{
+            EventTracker.shared.trackEvent(key: EventKey.subscripionViewShow.rawValue)
+        }
     }
 }
 
