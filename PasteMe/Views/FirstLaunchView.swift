@@ -21,8 +21,8 @@ struct FirstLaunchView: View {
     let opacity = 0.8
     let textWidth = 450 as CGFloat
     let heightOfText = 45 as CGFloat
-    let widthOfWindow = 650+240 as CGFloat
-    let heightOfWindow = 570 as CGFloat
+    let widthOfWindow = 550 as CGFloat
+    let heightOfWindow = 700 as CGFloat
     @Default(.windowPosition) private var windowPosition
     @Default(.popupPosition) private var popupAt
     @Default(.popupScreen) private var popupScreen
@@ -37,9 +37,10 @@ struct FirstLaunchView: View {
     var body: some View {
         Group{
             switch state {
-            case .second:
+            case .first:
                 VStack(spacing: 10){
-                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 250, height: 250, alignment: .center).padding(.top, 40)
+                    Spacer()
+                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 200, height: 200, alignment: .center)
                     VStack(spacing: 7) {
                         Text("An Easy Way to Copy and Paste").font(.title).bold()
                         Text("PasteMe keeps a history of everything you copy, so you can quickly find and reuse it at any time.").multilineTextAlignment(.center).frame(width: textWidth, height: heightOfText, alignment: .top).opacity(opacity)
@@ -49,9 +50,10 @@ struct FirstLaunchView: View {
                     }
                     Spacer()
                 }.padding().frame(width: widthOfWindow, height: heightOfWindow)
-            case .first:
+            case .second:
                 VStack(spacing: 10){
-                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 100, height: 100, alignment: .center).padding(.top, 40)
+                    Spacer()
+                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 100, height: 100, alignment: .center)
                     VStack(spacing: 7) {
                         Text("Quick Start").font(.title).bold()
                         Text("Set up and strat using PasteMe.").multilineTextAlignment(.center).frame(width: textWidth, height: heightOfText, alignment: .top).opacity(opacity)
@@ -79,26 +81,19 @@ struct FirstLaunchView: View {
                                 Text("Maximum number of copied items to keep").foregroundStyle(Color(NSColor.secondaryLabelColor))
                             }
                             Spacer()
-                            HStack {
-                              TextField("", value: $size, formatter: sizeFormatter)
-                                .frame(width: 40)
-                                .textFieldStyle(.plain)
-                                .multilineTextAlignment(.center)
-                                .padding(5)
-                                .background(Color(NSColor.textBackgroundColor))
-                                .cornerRadius(5)
-                                .help(Text("SizeTooltip", tableName: "StorageSettings"))
-                              Stepper("", value: $size, in: 1...9999)
-                                .labelsHidden()
-                            }
+                            TextField("", value: $size, formatter: sizeFormatter)
+                                  .frame(width: 130, height: 10)
+                                  .textFieldStyle(.roundedBorder)
+                              .multilineTextAlignment(.center)
+                              .help(Text("SizeTooltip", tableName: "StorageSettings"))
                         }
                         
                         Divider()
 
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("PopupAt", tableName: "AppearanceSettings")
-                                Text("Position where PasteMe pops up").foregroundStyle(Color(NSColor.secondaryLabelColor))
+                                Text("Popup Position", tableName: "AppearanceSettings")
+                                Text("Position where PasteMe appears").foregroundStyle(Color(NSColor.secondaryLabelColor))
                             }
                             Spacer()
                             Picker("", selection: $popupAt) {
@@ -133,7 +128,7 @@ struct FirstLaunchView: View {
                           }
                     }.padding(20).frame(width: 450).background(Color(NSColor.quaternaryLabelColor)).cornerRadius(20).padding(.bottom, 10)
                     Text("Continue").foregroundColor(Color.white).font(.headline).padding(.horizontal, 50).padding(.vertical, 10).background(Color(NSColor.controlAccentColor)).cornerRadius(10.0).onTapGesture {
-                        self.state = .configue
+                        self.state = .finished
                     }
                     Spacer()
                 }.padding().frame(width: widthOfWindow, height: heightOfWindow)
@@ -148,9 +143,12 @@ struct FirstLaunchView: View {
                     Spacer()
                 }.padding().frame(width: widthOfWindow, height: heightOfWindow)
             case .finished:
-                Text("3432432432")
+                PremiumView().onAppear{
+                    print("appear ")
+                    Defaults[.isFirtLaunch] = false
+                }
             }
-        }
+        }.background(Color(NSColor.windowBackgroundColor))
     }
 }
 

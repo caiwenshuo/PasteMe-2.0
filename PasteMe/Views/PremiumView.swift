@@ -28,8 +28,12 @@ struct PremiumView: View {
                 Text("You are using Eye Monitor Pro now.").font(.system(.headline))
             }else{
                 Image("PremiumIcon").resizable().frame(width: 150, height: 140).padding().padding(.top, 40)
-                Text("PasteMe Pro").font(.system(size: 22, design: .serif)).bold()
-                Text("Become Pro user to use without limitation.").padding(.vertical, 20)
+                Text("PasteMe Pro").font(.title).bold()
+                VStack(spacing: 5) {
+                    Text("Become Pro user to use without limitation.")
+                    Text("Pay once, use forever.")
+                }.padding(.vertical, 20)
+                
                 VStack(alignment: .leading, spacing: 10){
                     HStack{
                         Text("Use shortcuts to paste near the cursor instantly").fixedSize(horizontal: false, vertical: true)
@@ -76,28 +80,15 @@ struct PremiumView: View {
                     Text("No commitment. Cancel any time.")
                 }
                 VStack(spacing: 7){
-                  Text("Continue").padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300).background(Color(NSColor(named: "Premium")!)).foregroundColor(.white).cornerRadius(7)
+                  Text("Continue").padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300).background(Color(NSColor.controlAccentColor)).foregroundColor(.white).cornerRadius(7)
                         .onTapGesture {
                         EventTracker.shared.trackEvent(key: EventKey.subscripionButtonClick.rawValue)
                         store.purchaseProduct()
                     }
-                  Text("Skip and use the free version for 12 hours").multilineTextAlignment(.center).padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300).background(
-                        RoundedRectangle(cornerRadius: 7)
-                          .stroke(Color(NSColor(named: "Premium")!), lineWidth: 2)
-                    )
-                    .foregroundColor(.black)
+                  Text("Skip and use the free version for 12 hours").multilineTextAlignment(.center).padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300)
+                    .opacity(0.85)
                     .onTapGesture {
                       RateSubscribeHelper.shared.closePremiumWindow()
-                    }
-                    Text(restoreText).font(.subheadline).opacity(0.7).onTapGesture {
-                        restoreText = NSLocalizedString("Connecting...", comment: "")
-                        store.restoreProduct{
-                            //TODO: 恢复成功提醒
-                            restoreText = NSLocalizedString("Restore", comment: "")
-                        } restoreFailedHandler: {
-                            restoreText = NSLocalizedString("Restore failed. Try again later.", comment: "")
-                            print("restore failed")
-                        }
                     }
                 }
                 
@@ -114,9 +105,20 @@ struct PremiumView: View {
                             NSWorkspace.shared.open(url)
                         }
                     }
+                    Spacer()
+                    Text(restoreText).font(.system(.footnote)).opacity(0.7).onTapGesture {
+                      restoreText = NSLocalizedString("Connecting...", comment: "")
+                      store.restoreProduct{
+                          //TODO: 恢复成功提醒
+                          restoreText = NSLocalizedString("Restore", comment: "")
+                      } restoreFailedHandler: {
+                          restoreText = NSLocalizedString("Restore failed. Try again later.", comment: "")
+                          print("restore failed")
+                      }
+                    }
                 }.padding().padding(.horizontal, 40)
             }
-        }.frame(width: 450, height: 700).background(Color(NSColor.windowBackgroundColor)).environment(\.colorScheme, .light).onAppear{
+        }.frame(width: 550, height: 700).background(Color(NSColor.windowBackgroundColor)).environment(\.colorScheme, .light).onAppear{
             EventTracker.shared.trackEvent(key: EventKey.subscripionViewShow.rawValue)
         }
     }

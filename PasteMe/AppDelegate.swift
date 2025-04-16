@@ -130,7 +130,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     newUserWindow.backgroundColor = NSColor.controlBackgroundColor
       
     newUserWindow.setFrameAutosaveName("NewUserWindow")
-    let firstLaunchView = FirstLaunchView().edgesIgnoringSafeArea(.top)
+    let firstLaunchView = FirstLaunchView()
     newUserWindow.contentView = NSHostingView(rootView: firstLaunchView)
     newUserWindow.makeKeyAndOrderFront(nil)
     newUserWindow.delegate = self
