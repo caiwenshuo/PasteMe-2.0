@@ -52,7 +52,8 @@ struct AppearanceSettingsPane: View {
         HStack {
           Picker("", selection: $popupAt) {
             ForEach(PopupPosition.allCases) { position in
-              if position == .center || position == .lastPosition {
+//              if position == .center || position == .lastPosition {
+              if position == .center {
                 if screens.count > 1 {
                   Picker(position.description, selection: $popupScreen) {
                     Text("ActiveScreen", tableName: "AppearanceSettings")
@@ -78,17 +79,17 @@ struct AppearanceSettingsPane: View {
           .frame(width: 141)
           .help(Text("PopupAtTooltip", tableName: "AppearanceSettings"))
 
-          if popupAt == .lastPosition {
-            Button {
-              _windowPosition.reset()
-            } label: {
-              Image(systemName: "arrow.uturn.backward.circle.fill")
-                .imageScale(.large)
-            }
-            .buttonStyle(.borderless)
-            .help(Text("PopupAtLastLocationReset", tableName: "AppearanceSettings"))
-            .disabled(windowPosition == _windowPosition.defaultValue)
-          }
+//          if popupAt == .lastPosition {
+//            Button {
+//              _windowPosition.reset()
+//            } label: {
+//              Image(systemName: "arrow.uturn.backward.circle.fill")
+//                .imageScale(.large)
+//            }
+//            .buttonStyle(.borderless)
+//            .help(Text("PopupAtLastLocationReset", tableName: "AppearanceSettings"))
+//            .disabled(windowPosition == _windowPosition.defaultValue)
+//          }
         }
       }
 

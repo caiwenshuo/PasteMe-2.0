@@ -16,14 +16,6 @@ struct FooterView: View {
         FooterItemView(item: item)
       }
     }
-    .background {
-      GeometryReader { geo in
-        Color.clear
-          .task(id: geo.size.height) {
-            appState.popup.footerHeight = geo.size.height
-          }
-      }
-    }
     .opacity(showFooter ? 1 : 0)
     .frame(height: showFooter ? .infinity : 0)
   }

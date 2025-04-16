@@ -7,7 +7,7 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
   case statusItem
   case window
   case center
-  case lastPosition
+//  case lastPosition
 
   var id: Self { self }
 
@@ -21,8 +21,9 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
       return NSLocalizedString("PopupAtWindowCenter", tableName: "AppearanceSettings", comment: "")
     case .center:
       return NSLocalizedString("PopupAtScreenCenter", tableName: "AppearanceSettings", comment: "")
-    case .lastPosition:
-      return NSLocalizedString("PopupAtLastPosition", tableName: "AppearanceSettings", comment: "")
+    //TODO: 选择lastposition不生效，问题不明，暂时先隐藏。Maccy也有一样的问题
+//    case .lastPosition:
+//      return NSLocalizedString("PopupAtLastPosition", tableName: "AppearanceSettings", comment: "")
     }
   }
 
@@ -50,14 +51,14 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
           return topLeftPoint
         }
       }
-    case .lastPosition:
-      if let frame = NSScreen.forPopup?.visibleFrame {
-        let relativePos = Defaults[.windowPosition]
-        let anchorX = frame.minX + frame.width * relativePos.x
-        let anchorY = frame.minY + frame.height * relativePos.y
-        // Anchor is top middle of frame
-        return NSPoint(x: anchorX - size.width / 2, y: anchorY - size.height)
-      }
+//    case .lastPosition:
+//      if let frame = NSScreen.forPopup?.visibleFrame {
+//        let relativePos = Defaults[.windowPosition]
+//        let anchorX = frame.minX + frame.width * relativePos.x
+//        let anchorY = frame.minY + frame.height * relativePos.y
+//        // Anchor is top middle of frame
+//        return NSPoint(x: anchorX - size.width / 2, y: anchorY - size.height)
+//      }
     default:
       break
     }

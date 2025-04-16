@@ -6,6 +6,7 @@ import Purchases
 
 class AppDelegate: NSObject, NSApplicationDelegate {
   var panel: FloatingPanel<ContentView>!
+  var newUserWindow: NSWindow!
 
   @objc
   private lazy var statusItem: NSStatusItem = {
@@ -87,7 +88,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     Purchases.proxyURL = URL(string: "https://revenuecatproxy-aquulrbrfd.ap-northeast-1.fcapp.run")!
     Purchases.configure(withAPIKey: "appl_VEdlmDnfkhvUhkIZBqypmsNimwL")
     Store.shared.startUpFetchProduct()
-
+    
+#if DEBUG
+    setNewUserWindow()
+#else
+    if Defaults[.isFirtLaunch] {
+      setNewUserWindow()
+    }
+#endif
     panel = FloatingPanel(
       contentRect: NSRect(origin: .zero, size: Defaults[.windowSize]),
       identifier: Bundle.main.bundleIdentifier ?? "com.caiwenshuo.pasteme",
@@ -106,6 +114,26 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if Defaults[.clearOnQuit] {
       AppState.shared.history.clear()
     }
+  }
+  
+  func setNewUserWindow(){
+    newUserWindow = NSWindow(
+          contentRect: NSRect(x: 0, y: 0, width: 650, height: 570),
+          styleMask: [.titled, .closable, .fullSizeContentView],
+          backing: .buffered, defer: false)
+    newUserWindow.titlebarAppearsTransparent = true
+    newUserWindow.titleVisibility = .hidden
+    newUserWindow?.isReleasedWhenClosed = false
+      
+    newUserWindow.center()
+    newUserWindow.titlebarAppearsTransparent = true
+    newUserWindow.backgroundColor = NSColor.controlBackgroundColor
+      
+    newUserWindow.setFrameAutosaveName("NewUserWindow")
+    let firstLaunchView = FirstLaunchView().edgesIgnoringSafeArea(.top)
+    newUserWindow.contentView = NSHostingView(rootView: firstLaunchView)
+    newUserWindow.makeKeyAndOrderFront(nil)
+    newUserWindow.delegate = self
   }
 
   private func migrateUserDefaults() {
@@ -179,3 +207,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
   }
 }
+extension AppDelegate:NSWindowDelegate {}

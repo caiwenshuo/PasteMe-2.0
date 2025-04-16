@@ -20,6 +20,7 @@ class Popup {
   }
 
   func toggle(at popupPosition: PopupPosition = Defaults[.popupPosition]) {
+      print("resize toggle height \(height)")
     AppState.shared.appDelegate?.panel.toggle(height: height, at: popupPosition)
   }
 
@@ -32,7 +33,10 @@ class Popup {
   }
 
   func resize(height: CGFloat) {
-    self.height = height + headerHeight + pinnedItemsHeight + footerHeight + (verticalPadding * 2)
+    //TODO: 高度总是少了一点，所以临时+10解决，原因不明。另外增加item后，第一次打开popup高度会跳动，待解决。
+    self.height = height + headerHeight + pinnedItemsHeight + (verticalPadding * 2) + 10
+    print("resize height: \(height), headerHeight: \(headerHeight), pinnedItemsHeight: \(pinnedItemsHeight), footer: \(footerHeight), vertical: \(verticalPadding), self.height: \(self.height)")
+    print("resize from popup \(self.height)")
     AppState.shared.appDelegate?.panel.verticallyResize(to: self.height)
     needsResize = false
   }
