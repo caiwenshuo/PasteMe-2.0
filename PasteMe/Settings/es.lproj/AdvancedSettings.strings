@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Elimina automáticamente todos los elementos no anclados antes de salir de la aplicación.";
 "ClearSystemClipboard" = "Limpia también el portapapeles del sistema";
 "ClearSystemClipboardTooltip" = "Cuando está habilitado, borrar el historial también borrará el portapapeles del sistema actual.";
+"SearchMatchingMode" = "Modo de coincidencia de búsqueda:";

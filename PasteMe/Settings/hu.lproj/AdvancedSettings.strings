@@ -8,3 +8,4 @@
 "TurnOff" = "Kikapcsolás";
 "TurnOffDescription" = "Az összes új másolás figyelmen kívül hagyása.";
 "TurnOffShellScript" = "defaults write org.p0deje.Maccy ignoreEvents true\n# adatok másolása\ndefaults write org.p0deje.Maccy ignoreEvents false";
+"SearchMatchingMode" = "Keresési mód:";

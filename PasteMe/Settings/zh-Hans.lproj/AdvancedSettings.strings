@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "退出应用时仅保留已固定的项目。";
 "ClearSystemClipboard" = "同时清除系统剪贴板";
 "ClearSystemClipboardTooltip" = "启用后，清除历史记录也会清除当前系统剪贴板。";
+"SearchMatchingMode" = "搜索匹配模式：";

@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Automatically remove all unpinned items before quitting the application.";
 "ClearSystemClipboard" = "Clear the system clipboard too";
 "ClearSystemClipboardTooltip" = "When enabled, clearing the history would also clear the current system clipboard.";
+"SearchMatchingMode" = "Search matching mode:";

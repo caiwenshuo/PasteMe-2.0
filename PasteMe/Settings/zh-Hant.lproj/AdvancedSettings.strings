@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "退出應用程式時自動移除所有未釘選的項目。";
 "ClearSystemClipboard" = "同時清除系統剪貼簿";
 "ClearSystemClipboardTooltip" = "啟用後，清除歷史記錄也會清除系統目前的剪貼簿。";
+"SearchMatchingMode" = "搜尋匹配模式：";

@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Fjern alle ikke-festede elementer automatisk før du avslutter applikasjonen.";
 "ClearSystemClipboard" = "Tøm systemets utklippstavle også";
 "ClearSystemClipboardTooltip" = "Når den er aktivert, vil tømming av loggen også tømme gjeldende systemutklippstavle.";
+"SearchMatchingMode" = "Søkemodus:";

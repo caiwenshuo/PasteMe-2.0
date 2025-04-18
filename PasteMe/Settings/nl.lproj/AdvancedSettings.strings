@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Verwijder automatisch alle niet vastgemaakte items voordat u de app afsluit.";
 "ClearSystemClipboard" = "Wis ook het systeemklembord";
 "ClearSystemClipboardTooltip" = "Als dit is ingeschakeld, wordt bij het wissen van de geschiedenis ook het huidige klembord van het systeem gewist..";
+"SearchMatchingMode" = "Zoekmodus:";

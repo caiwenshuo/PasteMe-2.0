@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Uygulamadan çıkmadan önce tüm iğnesi çıkarılmış ögeleri kendiliğinden kaldır.";
 "ClearSystemClipboard" = "Sistem panosunu da temizle";
 "ClearSystemClipboardTooltip" = "Etkinleştirildiğinde, geçmişin temizlenmesi mevcut sistem panosunu da temizler.";
+"SearchMatchingMode" = "Arama modu:";

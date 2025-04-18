@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Automaticky odebrat všechny nepřipnuté položky před ukončením aplikace.";
 "ClearSystemClipboard" = "Vymazat taky systémovou schránku";
 "ClearSystemClipboardTooltip" = "Pokud je povoleno, smazání historie smaže i aktuální systémovou schránku.";
+"SearchMatchingMode" = "Režim vyhledávání:";

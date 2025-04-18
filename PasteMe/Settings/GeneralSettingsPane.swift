@@ -56,7 +56,7 @@ struct GeneralSettingsPane: View {
               Text(target.description)
               Text(target == .activeApp ? 
                 "Paste selected items directly to the application you are currently using." :
-                "Copy selected items to the system clipboard to paste manually later.")
+                "Copy selected items to the system clipboard to paste manually later.", tableName: "GeneralSettings")
                 .foregroundStyle(.gray)
                 .font(.system(size: 11))
                 .fixedSize(horizontal: false, vertical: true)

@@ -20,3 +20,8 @@
 "Regex" = "Regular expressions";
 "Mixed" = "Mixed";
 "NotificationsAndSounds" = "Notifications and sounds 􀱁";
+//New added
+"Paste selected items directly to the application you are currently using." = "Paste selected items directly to the application you are currently using.";
+"Copy selected items to the system clipboard to paste manually later." = "Copy selected items to the system clipboard to paste manually later.";
+"To clipboard" = "To clipboard";
+"To active app" = "To active app";

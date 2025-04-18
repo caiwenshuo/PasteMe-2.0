@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Rimuovi automaticamente gli elementi non bloccati prima di chiudere l'applicazione.";
 "ClearSystemClipboard" = "Cancella anche gli appunti di sistema";
 "ClearSystemClipboardTooltip" = "Se abilitato, la cancellazione della cronologia cancellerebbe anche gli appunti di sistema correnti.";
+"SearchMatchingMode" = "Modalità di corrispondenza ricerca:";

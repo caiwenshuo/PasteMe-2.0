@@ -60,3 +60,9 @@
 "Paste without formatting" = "粘贴无格式";
 "Pin/Unpin" = "固定/取消固定";
 "Delete" = "删除";
+//New added
+"Start typing in the search bar and press Enter to search." = "在搜索框输入关键词并按回车即可搜索。";
+"Right-click items to access more actions, such as pinning them." = "右击复制内容可查看更多操作，如固定。";
+"Press the Space key to view item details." = "点击空格建可查看复制内容的详情。";
+"Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app." = "在这里你可以查看和使用该设备上所有复制的内容。点击复制内容，或使用 ⌘ + 数字，即可将复制项粘贴。";
+"Pay once, use forever." = "一次付费，终身使用";

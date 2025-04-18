@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "アプリケーションを終了する前に、ピン留めされていない項目をすべて自動的に削除します。";
 "ClearSystemClipboard" = "システムのクリップボードもクリア";
 "ClearSystemClipboardTooltip" = "有効にすると、履歴をクリアすると現在のシステム クリップボードもクリアされます。";
+"SearchMatchingMode" = "検索マッチングモード：";

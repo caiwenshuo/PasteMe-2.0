@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Remova automaticamente todos os itens não fixados antes de sair do aplicativo.";
 "ClearSystemClipboard" = "Limpar também a área de transferência do sistema";
 "ClearSystemClipboardTooltip" = "Quando ativado, limpar o histórico também limparia a área de transferência atual do sistema.";
+"SearchMatchingMode" = "Modo de correspondência de pesquisa:";

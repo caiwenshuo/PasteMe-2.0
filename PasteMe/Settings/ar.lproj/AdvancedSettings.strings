@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "إزالة جميع العناصر غير المثبتة تلقائيًا قبل إغلاق التطبيق.";
 "ClearSystemClipboard" = "مسح حافظة النظام أيضًا";
 "ClearSystemClipboardTooltip" = "عند التمكين، سيؤدي مسح السجل أيضًا إلى مسح حافظة النظام الحالية.";
+"SearchMatchingMode" = "وضع مطابقة البحث:";

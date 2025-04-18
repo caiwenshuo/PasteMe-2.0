@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Supprimez automatiquement tous les éléments non épinglés avant de quitter l'application.";
 "ClearSystemClipboard" = "Effacer également le presse-papiers du système";
 "ClearSystemClipboardTooltip" = "Lorsqu'elle est activée, l'effacement de l'historique effacera également le presse-papiers du système actuel.";
+"SearchMatchingMode" = "Mode de correspondance de recherche:";

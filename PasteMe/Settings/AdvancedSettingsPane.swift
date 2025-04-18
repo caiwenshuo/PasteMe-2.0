@@ -29,7 +29,7 @@ struct AdvancedSettingsPane: View {
       
       Settings.Section(
         bottomDivider: true,
-        label: { Text("Search", tableName: "GeneralSettings") }
+        label: { Text("SearchMatchingMode", tableName: "AdvancedSettings") }
       ) {
         Picker("", selection: $searchMode) {
           ForEach(Search.Mode.allCases) { mode in

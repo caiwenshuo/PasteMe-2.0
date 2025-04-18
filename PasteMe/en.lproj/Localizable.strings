@@ -34,3 +34,8 @@
 "Paste without formatting" = "Paste without formatting";
 "Pin/Unpin" = "Pin/Unpin";
 "Delete" = "Delete";
+//New added
+"Start typing in the search bar and press Enter to search." = "Start typing in the search bar and press Enter to search.";
+"Right-click items to access more actions, such as pinning them." = "Right-click items to access more actions, such as pinning them.";
+"Press the Space key to view item details." = "Press the Space key to view item details.";
+"Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app." = "Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app.";

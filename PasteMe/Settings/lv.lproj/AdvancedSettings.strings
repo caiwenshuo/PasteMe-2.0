@@ -8,3 +8,4 @@
 "TurnOff" = "Izslēgt";
 "ClearSystemClipboard" = "Notīrīt arī sistēmas starpliktuvi";
 "ClearSystemClipboardTooltip" = "Ja šī opcija ir iespējota, vēstures notīrīšana notīrīs arī pašreizējo sistēmas starpliktuvi.";
+"SearchMatchingMode" = "Meklēšanas atbilstības režīms:";

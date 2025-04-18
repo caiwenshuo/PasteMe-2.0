@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "להסיר את כל הפריטים שאינם נעוצים בטרם יציאה מהיישום.";
 "ClearSystemClipboard" = "פינוי לוח הגזירים של המערכת בנוסף";
 "ClearSystemClipboardTooltip" = "כאשר ההגדרה פעילה, פינוי ההיסטוריה יפנה גם את לוח הגזירים הנוכחי של המערכת.";
+"SearchMatchingMode" = "מצב התאמת חיפוש:";

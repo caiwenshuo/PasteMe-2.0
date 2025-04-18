@@ -8,3 +8,4 @@
 "ClearHistoryOnQuitTooltip" = "Automatski ukloni sve otkvačene elemente prije zatvaranja programa.";
 "ClearSystemClipboard" = "Očistite i međuspremnik sustava";
 "ClearSystemClipboardTooltip" = "Kada je omogućeno, brisanje povijesti također bi izbrisalo trenutni sistemski međuspremnik.";
+"SearchMatchingMode" = "Način pretraživanja:";

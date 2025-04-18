@@ -36,10 +36,6 @@ class Store: ObservableObject {
                     }else{
                         DispatchQueue.main.async{
                             self.recipe?.isLocked = true
-#if DEBUG
-#else
-                          RateSubscribeHelper.shared.check(reminderType: .subscribe)
-#endif
                         }
                     }
                 }

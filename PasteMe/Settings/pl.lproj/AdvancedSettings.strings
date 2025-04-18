@@ -8,3 +8,4 @@
 "TurnOffViaMenuIconDescription" = "Możesz też kliknąć na ikonę menu z wciśniętym klawiszem ⌥.\nAby zignorować tylko następną akcję kopiowania, kliknij ikonę z wciśniętymi klawiszami ⌥⇧.";
 "ClearSystemClipboard" = "Wyczyść także schowek systemowy";
 "ClearHistoryOnQuitTooltip" = "Automatycznie wyczyść wszystkie nieprzypięte wpisy przed wyjściem z aplikacji.";
+"SearchMatchingMode" = "Tryb wyszukiwania:";
