@@ -90,12 +90,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     Store.shared.startUpFetchProduct()
     
 #if DEBUG
-    setNewUserWindow()
-#else
-    if Defaults[.isFirtLaunch] {
+    Defaults[.isFirstLaunch] = true
+#endif
+    if Defaults[.isFirstLaunch] {
       setNewUserWindow()
     }
-#endif
+
     panel = FloatingPanel(
       contentRect: NSRect(origin: .zero, size: Defaults[.windowSize]),
       identifier: Bundle.main.bundleIdentifier ?? "com.caiwenshuo.pasteme",

@@ -40,7 +40,7 @@ struct FirstLaunchView: View {
             case .first:
                 VStack(spacing: 10){
                     Spacer()
-                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 200, height: 200, alignment: .center)
+                    Image("PremiumIcon").resizable().scaledToFit().frame(width: 150, height: 150, alignment: .center)
                     VStack(spacing: 7) {
                         Text("An Easy Way to Copy and Paste").font(.title).bold()
                         Text("PasteMe keeps a history of everything you copy, so you can quickly find and reuse it at any time.").multilineTextAlignment(.center).frame(width: textWidth, height: heightOfText, alignment: .top).opacity(opacity)
@@ -145,7 +145,7 @@ struct FirstLaunchView: View {
             case .finished:
                 PremiumView().onAppear{
                     print("appear ")
-                    Defaults[.isFirtLaunch] = false
+                    Defaults[.isFirstLaunch] = false
                 }
             }
         }.background(Color(NSColor.windowBackgroundColor))

@@ -29,6 +29,13 @@ class Clipboard {
     .concealed,
     .transient
   ]
+  
+  private let newUserInsertItems: [String] = [
+    "Start typing in the search bar and press Enter to search.",
+    "Right-click items to access more actions, such as pinning them.",
+    "Press the Space key to view item details.",
+    "Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app."
+  ]
 
   private var enabledTypes: Set<NSPasteboard.PasteboardType> { Defaults[.enabledPasteboardTypes] }
   private var disabledTypes: Set<NSPasteboard.PasteboardType> { supportedTypes.subtracting(enabledTypes) }
@@ -37,6 +44,27 @@ class Clipboard {
 
   init() {
     changeCount = pasteboard.changeCount
+    
+    if Defaults[.isFirstLaunch] {
+      Task { @MainActor in
+        addDefaultItems()
+      }
+    }
+  }
+
+  @MainActor
+  private func addDefaultItems() {
+    for text in newUserInsertItems {
+      let item = HistoryItem()
+      Storage.shared.context.insert(item)
+      let content = HistoryItemContent(
+        type: NSPasteboard.PasteboardType.string.rawValue,
+        value: text.data(using: .utf8)
+      )
+      item.contents = [content]
+      item.title = text
+      History.shared.add(item)
+    }
   }
 
   func onNewCopy(_ hook: @escaping OnNewCopyHook) {
