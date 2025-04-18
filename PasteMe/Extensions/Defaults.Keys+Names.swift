@@ -1,6 +1,22 @@
 import AppKit
 import Defaults
 
+enum PasteTarget: String, CaseIterable, Identifiable, CustomStringConvertible, Defaults.Serializable {
+  case activeApp
+  case clipboard
+  
+  var id: Self { self }
+  
+  var description: String {
+    switch self {
+    case .activeApp:
+      return NSLocalizedString("To active app", tableName: "GeneralSettings", comment: "")
+    case .clipboard:
+      return NSLocalizedString("To clipboard", tableName: "GeneralSettings", comment: "")
+    }
+  }
+}
+
 struct StorageType {
   static let files = StorageType(types: [.fileURL])
   static let images = StorageType(types: [.png, .tiff])
@@ -14,6 +30,7 @@ extension Defaults.Keys {
   static let clearOnQuit = Key<Bool>("clearOnQuit", default: false)
   static let clearSystemClipboard = Key<Bool>("clearSystemClipboard", default: false)
   static let clipboardCheckInterval = Key<Double>("clipboardCheckInterval", default: 0.5)
+  static let firstLaunchDate = Key<Date>("firstLaunchDate", default: Date())
   static let enabledPasteboardTypes = Key<Set<NSPasteboard.PasteboardType>>(
     "enabledPasteboardTypes", default: Set(StorageType.all.types)
   )
@@ -23,6 +40,7 @@ extension Defaults.Keys {
   static let ignoreRegexp = Key<[String]>("ignoreRegexp", default: [])
   static let ignoredApps = Key<[String]>("ignoredApps", default: [])
   static let hasRate = Key<Bool>("hasRate", default: false)
+  static let checkCounter = Key<Int>("checkCounter", default: 0)
   static let ignoredPasteboardTypes = Key<Set<String>>(
     "ignoredPasteboardTypes",
     default: Set([
@@ -39,6 +57,7 @@ extension Defaults.Keys {
   static let migrations = Key<[String: Bool]>("migrations", default: [:])
   static let numberOfUsages = Key<Int>("numberOfUsages", default: 0)
   static let pasteByDefault = Key<Bool>("pasteByDefault", default: true)
+  static let pasteTarget = Key<PasteTarget>("pasteTarget", default: .activeApp)
   static let pinTo = Key<PinsPosition>("pinTo", default: .top)
   static let popupPosition = Key<PopupPosition>("popupPosition", default: .cursor)
   static let popupScreen = Key<Int>("popupScreen", default: 0)

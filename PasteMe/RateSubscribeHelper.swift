@@ -17,15 +17,21 @@ class RateSubscribeHelper {
   var rateMeInterval : Double = 12*60*60
   var reminderType: ReminderType = .subscribe
   var expiresDate = Date(timeIntervalSince1970: 0)
-
-  func check(reminderType: ReminderType? = nil){
-    if let reminderType = reminderType {
-        self.reminderType = reminderType
-    }
+  
+  func check(){
+    // 增加计数器
+    Defaults[.checkCounter] += 1
+    
+    // 如果计数器小于等于3，不触发任何弹窗
+    guard Defaults[.checkCounter] > 3 else { return }
     
     guard Date() > expiresDate else { return }
+    
+    // 当计数器超过20次时，将间隔时间缩短为6小时
+    rateMeInterval = Defaults[.checkCounter] > 20 ? 6*60*60 : 12*60*60
         
-    switch self.reminderType {
+    //每12小时轮流触发订阅和引导点评
+    switch reminderType {
     case .subscribe:
         if Store.shared.recipe?.isLocked == true {
           rateMeInterval = 12*60*60
@@ -35,13 +41,13 @@ class RateSubscribeHelper {
           //对于付费用户，减少点评打扰
           rateMeInterval = 48*60*60
         }
-        self.reminderType = .review
+        reminderType = .review
     default:
         if !Defaults[.hasRate] {
           openReviewWindow()
           expiresDate = Date().addingTimeInterval(rateMeInterval)
         }
-        self.reminderType = .subscribe
+        reminderType = .subscribe
     }
   }
   func hasRate(){

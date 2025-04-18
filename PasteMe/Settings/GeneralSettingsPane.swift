@@ -9,13 +9,13 @@ struct GeneralSettingsPane: View {
     string: "x-apple.systempreferences:com.apple.preference.notifications?id=\(Bundle.main.bundleIdentifier ?? "")"
   )
 
-  @Default(.searchMode) private var searchMode
-
   @State private var copyModifier = HistoryItemAction.copy.modifierFlags.description
   @State private var pasteModifier = HistoryItemAction.paste.modifierFlags.description
   @State private var pasteWithoutFormatting = HistoryItemAction.pasteWithoutFormatting.modifierFlags.description
 
-
+  @Default(.pasteTarget) private var pasteTarget
+  @State private var previewPlaceHolder = "Space"
+  
   var body: some View {
     Settings.Container(contentWidth: 450) {
       Settings.Section(title: "", bottomDivider: true) {
@@ -42,33 +42,35 @@ struct GeneralSettingsPane: View {
         bottomDivider: true,
         label: { Text("Preview", tableName: "GeneralSettings") }
       ) {
-        KeyboardShortcuts.Recorder(for: .preview)
-          .help(Text("PreviewTooltip", tableName: "GeneralSettings"))
+        TextField("Space", text: $previewPlaceHolder).textFieldStyle(.roundedBorder).frame(width: 130).multilineTextAlignment(.center).disabled(true)
       }
       
 
       Settings.Section(
         bottomDivider: true,
-        label: { Text("Search", tableName: "GeneralSettings") }
+        label: { Text("Behavior", tableName: "GeneralSettings") }
       ) {
-        Picker("", selection: $searchMode) {
-          ForEach(Search.Mode.allCases) { mode in
-            Text(mode.description)
+        Picker("", selection: $pasteTarget) {
+          ForEach(PasteTarget.allCases) { target in
+            VStack(alignment: .leading, spacing: 4) {
+              Text(target.description)
+              Text(target == .activeApp ? 
+                "Paste selected items directly to the application you are currently using." :
+                "Copy selected items to the system clipboard to paste manually later.")
+                .foregroundStyle(.gray)
+                .font(.system(size: 11))
+                .fixedSize(horizontal: false, vertical: true)
+            }
           }
         }
         .labelsHidden()
-        .frame(width: 180)
-      }
-
-      Settings.Section(
-        bottomDivider: true,
-        label: { Text("Behavior", tableName: "GeneralSettings") }
-      ) {
-        Defaults.Toggle(key: .pasteByDefault) {
-          Text("PasteAutomatically", tableName: "GeneralSettings")
+        .pickerStyle(.radioGroup)
+        .frame(width: 300, alignment: .leading)
+        .onChange(of: pasteTarget) { oldValue, newValue in
+          //原有代码是使用.pasteByDefault使用，为了避免大幅修改原有代码，故做了pasteTarget到.pasteByDefault的映射
+          Defaults[.pasteByDefault] = (newValue == .activeApp)
+          refreshModifiers(newValue)
         }
-        .onChange(refreshModifiers)
-        .fixedSize()
 
         Defaults.Toggle(key: .removeFormattingByDefault) {
           Text("PasteWithoutFormatting", tableName: "GeneralSettings")

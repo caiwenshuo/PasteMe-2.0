@@ -89,10 +89,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     Purchases.configure(withAPIKey: "appl_VEdlmDnfkhvUhkIZBqypmsNimwL")
     Store.shared.startUpFetchProduct()
     
-#if DEBUG
-    Defaults[.isFirstLaunch] = true
-#endif
+//#if DEBUG
+//    Defaults[.isFirstLaunch] = true
+//#endif
+    print("firstlaunch \(Defaults[.isFirstLaunch])")
     if Defaults[.isFirstLaunch] {
+      Defaults[.firstLaunchDate] = Date()
       setNewUserWindow()
     }
 
