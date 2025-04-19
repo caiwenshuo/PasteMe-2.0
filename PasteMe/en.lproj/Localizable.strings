@@ -34,7 +34,7 @@
 "Paste without formatting" = "Paste without formatting";
 "Pin/Unpin" = "Pin/Unpin";
 "Delete" = "Delete";
-//New added
+//引导页
 "Start typing in the search bar and press Enter to search." = "Start typing in the search bar and press Enter to search.";
 "Right-click items to access more actions, such as pinning them." = "Right-click items to access more actions, such as pinning them.";
 "Press the Space key to view item details." = "Press the Space key to view item details.";
@@ -51,3 +51,19 @@
 "Popup Position" = "Popup position";
 "Position where PasteMe appears" = "Position where PasteMe appears";
 "Continue" = "Continue";
+"Use shortcuts to paste near the cursor instantly" = "Use shortcuts to paste near the cursor instantly";
+"View different content in different styles" = "View different content in different styles";
+"Pin important information" = "Pin important information";
+"Easily find what you copied by searching" = "Easily find what you copied by searching";
+"Support future development" = "Support future development";
+"Only" = "Only";
+"for life time" = "for life time";
+"Restore" = "Restore";
+"Terms of Use" = "Terms of Use";
+"Privacy Policy" = "Privacy Policy";
+"Become Pro user to use without limitation." = "Become Pro user to use without limitation.";
+"Skip and use the free version for 12 hours" = "Skip and use the free version for 12 hours";
+"Connecting..." = "Connecting...";
+"Restore failed. Try again later." = "Restore failed. Try again later.";
+"Try again" = "Try again";
+"Pay once, use forever." = "Pay once, use forever.";

@@ -38,6 +38,7 @@
 "Your App Store review will help more people know PasteMe" = "你的 App Store 点评有助于让更多人知道 PasteMe";
 "Already rated" = "已经评分了";
 "Rate us" = "去评分";
+//订阅页
 "Use shortcuts to paste near the cursor instantly" = "使用快捷键即可在光标旁弹出剪贴板";
 "View different content in different styles" = "支持多种格式内容";
 "Pin important information" = "重要内容随时置顶查看";
@@ -60,12 +61,12 @@
 "Paste without formatting" = "粘贴无格式";
 "Pin/Unpin" = "固定/取消固定";
 "Delete" = "删除";
-//New added
+"Pay once, use forever." = "一次付费，终身使用";
+//引导页
 "Start typing in the search bar and press Enter to search." = "在搜索框输入关键词并按回车即可搜索。";
 "Right-click items to access more actions, such as pinning them." = "右击复制内容可查看更多操作，如固定。";
 "Press the Space key to view item details." = "点击空格建可查看复制内容的详情。";
 "Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app." = "在这里你可以查看和使用该设备上所有复制的内容。点击复制内容，或使用 ⌘ + 数字，即可将复制项粘贴。";
-"Pay once, use forever." = "一次付费，终身使用";
 "An Easy Way to Copy and Paste" = "随心复制粘贴";
 "PasteMe keeps a history of everything you copy, so you can quickly find and reuse it at any time." = "PasteMe 保存了你复制所有内容的历史，以便你随时快捷查找和使用。";
 "Get Start" = "开始";
