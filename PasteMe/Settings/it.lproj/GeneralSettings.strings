@@ -8,9 +8,9 @@
 "PinTooltip" = "Combinazione di tasti per bloccare l'elemento della cronologia.\nDefault: %@P.";
 "Delete" = "Cancellare:";
 "DeleteTooltip" = "Combinazione di tasti per cancellare l'elemento della cronologia.\nDefault: %@⌫.";
-"Behavior" = "Comportamento:";
+"Behavior" = "Incolla elementi:";
 "PasteAutomatically" = "Incolla automaticamente";
-"PasteWithoutFormatting" = "Incolla senza formattazione";
+"PasteWithoutFormatting" = "Incolla sempre senza formattazione";
 "Modifiers" = "Personalizza il comportamento quando si seleziona un elemento:\n• Seleziona con %@ premuto per copiare l'elemento.\n• Seleziona con %@ premuto per copiare e incollare l'elemento.\n• Seleziona con %@ premuto per copiare, eliminare la formattazione e incollare l'elemento.";
 "Search" = "Ricerca:";
 "Exact" = "Esatta";
@@ -18,7 +18,7 @@
 "Regex" = "Espressioni regolari";
 "Mixed" = "Mista";
 "NotificationsAndSounds" = "Notifiche e suoni 􀱁";
-"Preview" = "Anteprima";
+"Preview" = "Visualizza dettagli:";
 "PreviewTooltip" = "Tasto di scelta rapida per visualizzare il contenuto completo dell'elemento storico.\nPredefinito: barra spaziatrice.";
 "Paste selected items directly to the application you are currently using." = "Incolla gli elementi selezionati direttamente nell'applicazione che stai utilizzando.";
 "Copy selected items to the system clipboard to paste manually later." = "Copia gli elementi selezionati negli appunti di sistema per incollarli manualmente in seguito.";

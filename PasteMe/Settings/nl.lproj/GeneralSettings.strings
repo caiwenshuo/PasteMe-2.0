@@ -8,9 +8,9 @@
 "PinTooltip" = "Sneltoets om geschiedenisitem vast te zetten.\nStandaard: %@P.";
 "Delete" = "Verwijder:";
 "DeleteTooltip" = "Sneltoets om geschiedenisitem te verwijderen.\nStandaard: %@⌫.";
-"Behavior" = "Gedrag:";
+"Behavior" = "Items plakken:";
 "PasteAutomatically" = "Plak automatisch";
-"PasteWithoutFormatting" = "Plakken zonder opmaak";
+"PasteWithoutFormatting" = "Altijd zonder opmaak plakken";
 "Modifiers" = "Pas het gedrag aan bij het selecteren van een item:\n• Selecteer met %@ ingedrukt om item te kopiëren.\n• Selecteer met %@ ingedrukt om item te kopiëren en te plakken.\n• Selecteer met %@ ingedrukt om te kopiëren, opmaak te wissen en te plakken.";
 "Search" = "Zoek:";
 "Exact" = "Exact";
@@ -18,7 +18,7 @@
 "Regex" = "Reguliere expressies";
 "Mixed" = "Mixed";
 "NotificationsAndSounds" = "Meldingen en geluiden 􀱁";
-"Preview" = "Voorvertoning";
+"Preview" = "Details bekijken:";
 "PreviewTooltip" = "Sneltoets om de volledige inhoud van een historisch item te bekijken.\nStandaard: spatiebalk.";
 "Paste selected items directly to the application you are currently using." = "Geselecteerde items direct in de applicatie plakken die u momenteel gebruikt.";
 "Copy selected items to the system clipboard to paste manually later." = "Geselecteerde items naar het systeemklembord kopiëren om later handmatig te plakken.";

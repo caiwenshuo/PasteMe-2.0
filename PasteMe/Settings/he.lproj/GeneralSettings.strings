@@ -8,9 +8,9 @@
 "PinTooltip" = "צירוף מקשים לנעיצת פריט.\nברירת מחדל: %@P.";
 "Delete" = "מחיקה:";
 "DeleteTooltip" = "צירוף מקשים למחיקת פריט מההיסטוריה.\nברירת מחדל: %@⌫.";
-"Behavior" = "התנהגות:";
+"Behavior" = "הדבקת פריטים:";
 "PasteAutomatically" = "להדביק אוטומטית";
-"PasteWithoutFormatting" = "להדביק בלי עיצוב";
+"PasteWithoutFormatting" = "תמיד להדביק בלי עיצוב";
 "Modifiers" = "התאמת ההתנהגות בעת בחירת פריט:\n• יש לבחור תוך החזקה של %@ כדי להעתיק פריט.\n• יש לבחור תוך החזקה של %@ כדי להעתיק ולהדביק פריט.\n• יש לבחור תוך החזקה של %@ כדי להעתיק, להסיר את העיצוב ולהדביק.";
 "Search" = "חיפוש:";
 "Exact" = "מדויק";
@@ -18,7 +18,7 @@
 "Regex" = "ביטויים רגולריים";
 "Mixed" = "מעורבב";
 "NotificationsAndSounds" = "התראות וצלילים 􀱁";
-"Preview" = "תצוגה מקדימה";
+"Preview" = "צפייה בפרטים:";
 "PreviewTooltip" = "קיצור דרך לצפייה בתוכן המלא של פריט היסטוריה.\nברירת מחדל: רווח.";
 "Paste selected items directly to the application you are currently using." = "להדביק את הפריטים שנבחרו ישירות ביישום שבו אתה משתמש כרגע.";
 "Copy selected items to the system clipboard to paste manually later." = "להעתיק את הפריטים שנבחרו ללוח של המערכת כדי להדביק אותם ידנית מאוחר יותר.";

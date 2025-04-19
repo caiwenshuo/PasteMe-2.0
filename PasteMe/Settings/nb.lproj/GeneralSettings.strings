@@ -8,9 +8,9 @@
 "PinTooltip" = "Hurtigtast for å merke historikkelement.\nStandard: %@P.";
 "Delete" = "Slett:";
 "DeleteTooltip" = "Hurtigtast for å slette historieelement.\nStandard: %@⌫.";
-"Behavior" = "Oppførsel:";
+"Behavior" = "Lim inn elementer:";
 "PasteAutomatically" = "Lim in automatisk";
-"PasteWithoutFormatting" = "Lim inn uten formattering";
+"PasteWithoutFormatting" = "Alltid lime inn uten formattering";
 "Modifiers" = "Tilpass oppførsel ved valg av element:\n• Velg med %@ nedtrykket for å kopiere element.\n• Velg med %@ nedtrykket for å kopiere og lime inn element.\n• Velg med %@ nedtrykket for å kopiere, slette formattering og lime inn element.";
 "Search" = "Søk:";
 "Exact" = "Nøyaktig";
@@ -18,7 +18,7 @@
 "Regex" = "Vanlig uttrykk";
 "Mixed" = "Blandet";
 "NotificationsAndSounds" = "Varsler og lyder 􀱁";
-"Preview" = "Forhåndsvisning";
+"Preview" = "Se detaljer:";
 "PreviewTooltip" = "Snarveiknapp for å forhåndsvise hele innholdet i et historikk-element.\nStandard: mellomromstasten.";
 "Paste selected items directly to the application you are currently using." = "Lim inn valgte elementer direkte i programmet du bruker nå.";
 "Copy selected items to the system clipboard to paste manually later." = "Kopier valgte elementer til systemets utklippstavle for å lime inn manuelt senere.";

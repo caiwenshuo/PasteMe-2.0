@@ -8,9 +8,9 @@
 "PinTooltip" = "履歴項目を固定するショートカット キー。\nデフォルト：%@P.";
 "Delete" = "デリート:";
 "DeleteTooltip" = "履歴項目を削除するショートカット キー。\nデフォルト：%@⌫。";
-"Behavior" = "動作:";
+"Behavior" = "項目を貼り付け：";
 "PasteAutomatically" = "自動的に貼り付け";
-"PasteWithoutFormatting" = "書式なしで貼り付け";
+"PasteWithoutFormatting" = "常に書式なしで貼り付け";
 "Modifiers" = "項目選択時の動作カスタマイズ：\n• %@を押しながら選択すると項目をコピーします。\n• %@を押しながら選択すると項目をコピーして貼り付けます。\n• %@を押しながら選択すると項目をコピーし、 書式なしで貼り付けます。";
 "Search" = "検索：";
 "Exact" = "精密";
@@ -18,7 +18,7 @@
 "Regex" = "正規表現";
 "Mixed" = "混合";
 "NotificationsAndSounds" = "通知と音 􀱁";
-"Preview" = "プレビュー";
+"Preview" = "詳細を表示：";
 "PreviewTooltip" = "履歴項目の全内容をプレビューするショートカットキー。\nデフォルト：スペースキー。";
 "Paste selected items directly to the application you are currently using." = "選択した項目を現在使用中のアプリケーションに直接貼り付けます。";
 "Copy selected items to the system clipboard to paste manually later." = "選択した項目をシステムのクリップボードにコピーし、後で手動で貼り付けます。";

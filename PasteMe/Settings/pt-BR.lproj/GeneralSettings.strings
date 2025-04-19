@@ -8,9 +8,9 @@
 "PinTooltip" = "Tecla de atalho para fixar item do histórico.\nPadrão: ⌥P.";
 "Delete" = "Excluir:";
 "DeleteTooltip" = "Aproximada";
-"Behavior" = "Comportamento:";
+"Behavior" = "Colar itens:";
 "PasteAutomatically" = "Colar automaticamente";
-"PasteWithoutFormatting" = "Colar sem formatação";
+"PasteWithoutFormatting" = "Sempre colar sem formatação";
 "Modifiers" = "Personalize o comportamento ao selecionar o item:\n• Selecione com ⌘ pressionado para copiar o item.\n• Selecione com ⌥ pressionado para copiar e colar o item.\n• Selecionar com ⌥⇧ pressionado para copiar, limpar a formatação e colar o item.";
 "Search" = "Busca:";
 "Exact" = "Exata";
@@ -18,7 +18,7 @@
 "Regex" = "Expressões regulares";
 "Mixed" = "Mista";
 "NotificationsAndSounds" = "Notificações e sons 􀱁";
-"Preview" = "Visualizar";
+"Preview" = "Ver detalhes:";
 "PreviewTooltip" = "Tecla de atalho para visualizar o conteúdo completo do item histórico.\nPadrão: barra de espaço.";
 "Paste selected items directly to the application you are currently using." = "Colar os itens selecionados diretamente no aplicativo que você está usando atualmente.";
 "Copy selected items to the system clipboard to paste manually later." = "Copiar os itens selecionados para a área de transferência do sistema para colar manualmente depois.";

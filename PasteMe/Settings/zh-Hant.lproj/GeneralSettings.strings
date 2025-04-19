@@ -8,9 +8,9 @@
 "PinTooltip" = "釘選歷史記錄項目的快捷鍵。\n預設：%@P。";
 "Delete" = "刪除：";
 "DeleteTooltip" = "刪除歷史記錄項目的快捷鍵。\n預設：%@⌫。";
-"Behavior" = "行為：";
+"Behavior" = "貼上項目：";
 "PasteAutomatically" = "自動貼上";
-"PasteWithoutFormatting" = "純文字貼上";
+"PasteWithoutFormatting" = "始終以純文字貼上";
 "Modifiers" = "自訂選擇項目時的行為：\n• 按住 %@ 並選取以複製項目。\n• 按住 %@ 並選取以複製和貼上項目。\n• 按住 %@ 並選取以複製，清除格式並貼上項目。";
 "Search" = "搜尋：";
 "Exact" = "精確";
@@ -18,7 +18,7 @@
 "Regex" = "正規表示式";
 "Mixed" = "混合";
 "NotificationsAndSounds" = "通知和聲音 􀱁";
-"Preview" = "預覽";
+"Preview" = "查看詳情：";
 "PreviewTooltip" = "預覽歷史項目的完整內容的快捷鍵。\n預設：空格鍵。";
 "Paste selected items directly to the application you are currently using." = "直接將所選項目貼上到您當前使用的應用程式。";
 "Copy selected items to the system clipboard to paste manually later." = "將所選項目複製到系統剪貼簿，以便稍後手動貼上。";

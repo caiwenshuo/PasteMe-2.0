@@ -8,11 +8,14 @@
 "PinTooltip" = "Shortcut key to pin history item.\nDefault: ⌥P.";
 "Delete" = "Delete:";
 "DeleteTooltip" = "Shortcut key to delete history item.\nDefault: ⌥⌫.";
-"Preview" = "Preview:";
+//edited
+"Preview" = "View details:";
 "PreviewTooltip" = "Shortcut key to preview the full content of history item.\nDefault: space.";
-"Behavior" = "Behavior:";
+//edited
+"Behavior" = "Paste items:";
 "PasteAutomatically" = "Paste automatically";
-"PasteWithoutFormatting" = "Paste without formatting";
+//edited
+"PasteWithoutFormatting" = "Always paste without formatting";
 "Modifiers" = "Customize the behavior when selecting item:\n• Select with %@ pressed to copy item.\n• Select with %@ pressed to copy and paste item.\n• Select with %@ pressed to copy, clear formatting, and paste item.";
 "Search" = "Search:";
 "Exact" = "Exact";

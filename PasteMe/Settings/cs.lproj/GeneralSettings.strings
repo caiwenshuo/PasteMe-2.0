@@ -8,9 +8,9 @@
 "PinTooltip" = "Klávesová zkratka pro připnutí položky.\nVýchozí: ⌥P.";
 "Delete" = "Smazat:";
 "DeleteTooltip" = "Přibližné";
-"Behavior" = "Chování:";
+"Behavior" = "Vložit položky:";
 "PasteAutomatically" = "Vložit automaticky";
-"PasteWithoutFormatting" = "Vložit bez formátování";
+"PasteWithoutFormatting" = "Vždy vložit bez formátování";
 "Modifiers" = "Přizpůsob chování při volbě položky:\n• Vyber se stisknutím ⌘ pro zkopírování položky.\n• Vyber se stisknutím ⌥ pro zkopírování a vložení položky.\n• Vyber se stisknutím ⌥⇧ pro zkopírování, odstranění formátování a vložení položky.";
 "Search" = "Vyhledávání:";
 "Exact" = "Přesné";
@@ -18,7 +18,7 @@
 "Regex" = "Regulární výrazy";
 "Mixed" = "Smíšené";
 "NotificationsAndSounds" = "Notifikace a zvuky 􀱁";
-"Preview" = "Náhled";
+"Preview" = "Zobrazit podrobnosti:";
 "PreviewTooltip" = "Klávesová zkratka pro náhled plného obsahu položky historie.\nVýchozí: mezerník.";
 "Paste selected items directly to the application you are currently using." = "Vložit vybrané položky přímo do aplikace, kterou právě používáte.";
 "Copy selected items to the system clipboard to paste manually later." = "Zkopírovat vybrané položky do systémové schránky pro pozdější ruční vložení.";

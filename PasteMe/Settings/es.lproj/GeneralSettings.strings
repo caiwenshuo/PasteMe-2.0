@@ -8,9 +8,9 @@
 "PinTooltip" = "Combinación de teclas para anclar un elemento del historial.\nPor defecto: %@P.";
 "Delete" = "Borrar:";
 "DeleteTooltip" = "Combinación de teclas para borrar un elemento del historial.\nPor defecto: %@⌫.";
-"Behavior" = "Comportamiento:";
+"Behavior" = "Pegar elementos:";
 "PasteAutomatically" = "Pegar automáticamente";
-"PasteWithoutFormatting" = "Pegar sin formatear";
+"PasteWithoutFormatting" = "Pegar siempre sin formatear";
 "Modifiers" = "Personalice el comportamiento al seleccionar un elemento:\n• Seleccione presionando %@ para copiar el elemento.\n• Seleccione presionando %@ para copiar y pegar un elemento.\n• Seleccione presionando %@ para copiar, quitar formato y pegar un elemento.";
 "Search" = "Búsqueda:";
 "Exact" = "Exacta";
@@ -18,7 +18,7 @@
 "Regex" = "Expresiones regulares";
 "Mixed" = "Mezclada";
 "NotificationsAndSounds" = "Notificaciones y sonidos 􀱁";
-"Preview" = "Vista previa";
+"Preview" = "Ver detalles:";
 "PreviewTooltip" = "Tecla de acceso rápido para previsualizar el contenido completo del elemento de historial.\nPredeterminado: barra espaciadora.";
 "Paste selected items directly to the application you are currently using." = "Pegar los elementos seleccionados directamente en la aplicación que está utilizando actualmente.";
 "Copy selected items to the system clipboard to paste manually later." = "Copiar los elementos seleccionados al portapapeles del sistema para pegarlos manualmente más tarde.";

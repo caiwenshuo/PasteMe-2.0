@@ -4,9 +4,9 @@
 "Open" = "Megnyitás:";
 "Delete" = "Törlés:";
 "DeleteTooltip" = "Gyorsbillentyű az előzmény elem törléséhez.\nAlapértelmezett: ⌥⌫.";
-"Behavior" = "Viselkedés:";
+"Behavior" = "Elemek beillesztése:";
 "PasteAutomatically" = "Automatikus beillesztés";
-"PasteWithoutFormatting" = "Beillesztés formázások nélkül";
+"PasteWithoutFormatting" = "Mindig formázások nélkül beillesztés";
 "Search" = "Keresés:";
 "Exact" = "Egyező";
 "Fuzzy" = "Hasonló";
@@ -18,7 +18,7 @@
 "Pin" = "Kitűzés:";
 "PinTooltip" = "Gyorsbillentyű az előzmény elem kitűzéséhez.\nAlapértelmezett: ⌥P.";
 "Modifiers" = "Viselkedés testreszabása az elem kiválasztásakor:\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz es a beillesztéshez.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz, a formázások törléséhez és a beillesztéshez.";
-"Preview" = "Előnézet";
+"Preview" = "Részletek megtekintése:";
 "PreviewTooltip" = "Gyorsbillentyű a történelem elemének teljes tartalmának megtekintéséhez.\nAlapértelmezett: szóköz.";
 "Paste selected items directly to the application you are currently using." = "A kiválasztott elemek közvetlen beillesztése az éppen használt alkalmazásba.";
 "Copy selected items to the system clipboard to paste manually later." = "A kiválasztott elemek másolása a rendszer vágólapjára későbbi kézi beillesztéshez.";

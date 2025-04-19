@@ -3,9 +3,9 @@
 "PinTooltip" = "Skrót do przypięcia wpisu w historii.\nDomyślnie: ⌥P.";
 "Delete" = "Usuń:";
 "DeleteTooltip" = "Skrót do usunięcia wpisu z historii.\nDomyślnie: ⌥⌫.";
-"Behavior" = "Zachowanie:";
+"Behavior" = "Wklej elementy:";
 "PasteAutomatically" = "Wklej automatycznie";
-"PasteWithoutFormatting" = "Wklej bez formatowania";
+"PasteWithoutFormatting" = "Zawsze wklej bez formatowania";
 "Modifiers" = "Dostosuj zachowanie przy wybieraniu wpisu:\n• Wybierz z wciśniętym %@ aby skopiować.\n• Wybierz z wciśniętym %@ aby skopiować i wkleić.\n• Wybierz z wciśniętym %@ aby skopiować i wkleić z wyczyszczonym formatowaniem.";
 "Exact" = "Dokładne";
 "Search" = "Wyszukiwanie:";
@@ -18,7 +18,7 @@
 "CheckForUpdates" = "Automatycznie sprawdzaj aktualizacje";
 "CheckNow" = "Sprawdź teraz";
 "Open" = "Otwórz:";
-"Preview" = "Podgląd";
+"Preview" = "Zobacz szczegóły:";
 "PreviewTooltip" = "Skrót klawiszowy do podglądu pełnej zawartości elementu historii.\nDomyślnie: spacja.";
 "Paste selected items directly to the application you are currently using." = "Wklej wybrane elementy bezpośrednio do aplikacji, której aktualnie używasz.";
 "Copy selected items to the system clipboard to paste manually later." = "Skopiuj wybrane elementy do schowka systemowego, aby wkleić je później ręcznie.";

@@ -8,11 +8,11 @@
 "PinTooltip" = "固定历史记录项目的快捷键。\n默认值：%@P。";
 "Delete" = "删除：";
 "DeleteTooltip" = "删除历史记录的快捷键。\n默认值：%@⌫。";
-"Behavior" = "行为:";
+"Behavior" = "粘贴项目：";
 "PasteAutomatically" = "自动粘贴";
 "ToActiveApp" = "粘贴到活动应用";
 "ToClipboard" = "复制到剪贴板";
-"PasteWithoutFormatting" = "纯文本粘贴";
+"PasteWithoutFormatting" = "始终以纯文本粘贴";
 "Modifiers" = "自定义选择项目时的行为:\n• 按住 %@ 选择项目以复制。\n• 按住 %@ 选择项目以复制并粘贴。\n• 按住 %@ 选择项目以复制并匹配格式粘贴。";
 "Search" = "搜索：";
 "Exact" = "精确";
@@ -20,8 +20,8 @@
 "Regex" = "正则表达式";
 "Mixed" = "混合";
 "NotificationsAndSounds" = "通知和声音 􀱁";
-"Preview" = "预览";
-"PreviewTooltip" = "预览历史项的完整内容的快捷键。\n默认：空格键。";
+"Preview" = "查看详情：";
+"PreviewTooltip" = "预览历史项完整内容的快捷键。\n默认：空格键。";
 //New added
 "Paste selected items directly to the application you are currently using." = "将选中项直接粘贴至你正在使用的应用中。";
 "Copy selected items to the system clipboard to paste manually later." = "复制选中项至系统剪切板，后续使用时手动粘贴。";

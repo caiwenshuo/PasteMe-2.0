@@ -8,9 +8,9 @@
 "PinTooltip" = "Tipka prečaca za prikvačivanje stavke povijesti.\nStandardno: %@P.";
 "Delete" = "Izbrisati:";
 "DeleteTooltip" = "Tipka prečaca za brisanje stavke povijesti.\nStandardno: %@⌫.";
-"Behavior" = "Ponašanje:";
+"Behavior" = "Umetanje stavki:";
 "PasteAutomatically" = "Umetni automatski";
-"PasteWithoutFormatting" = "Umetni neformatirano";
+"PasteWithoutFormatting" = "Uvijek umetni neformatirano";
 "Modifiers" = "Prilagodi ponašanje pri biranju elemenata:\n• Za kopiranje elementa odaberi zajedno s pritisnutom tipkom %@.\n• Za kopiranje i umetanje elementa odaberi zajedno s pritisnutom tipkom %@.\n• Za kopiranje, uklanjanje formata i umetanje elementa odaberi zajedno s pritisnutom tipkom %@.";
 "Search" = "Traži:";
 "Exact" = "Točno";
@@ -18,7 +18,7 @@
 "Regex" = "Regularni izrazi";
 "Mixed" = "Mješoviti";
 "NotificationsAndSounds" = "Obavijesti i zvukovi 􀱁";
-"Preview" = "Pregled";
+"Preview" = "Pogledaj detalje:";
 "PreviewTooltip" = "Prečica za pregled cijelog sadržaja stavke iz povijesti.\nZadano: razmaknica.";
 "Paste selected items directly to the application you are currently using." = "Zalijepi odabrane stavke izravno u aplikaciju koju trenutno koristite.";
 "Copy selected items to the system clipboard to paste manually later." = "Kopiraj odabrane stavke u međuspremnik sustava za kasnije ručno lijepljenje.";

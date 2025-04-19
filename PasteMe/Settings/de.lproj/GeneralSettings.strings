@@ -8,9 +8,9 @@
 "PinTooltip" = "Tastenkombination zum Anheften eines Verlaufselements.\nStandard: %@P.";
 "Delete" = "Löschen:";
 "DeleteTooltip" = "Tastenkombination zum Löschen eines Verlaufselements.\nStandard: %@⌫.";
-"Behavior" = "Verhalten:";
+"Behavior" = "Elemente einfügen:";
 "PasteAutomatically" = "Automatisch einfügen";
-"PasteWithoutFormatting" = "Einfügen ohne Formatierung";
+"PasteWithoutFormatting" = "Immer ohne Formatierung einfügen";
 "Modifiers" = "Verhalten bei Auswahl eines Eintrags anpassen:\n• Drücke %@, um den gewählten Eintrag zu kopieren.\n• Drücke %@, um den gewählten Eintrag zu kopieren und einzufügen.\n• Drücke %@, um den gewählten Eintrag zu kopieren und unformatiert einzufügen.";
 "Search" = "Suche:";
 "Exact" = "Exakt";
@@ -18,7 +18,7 @@
 "Regex" = "Reguläre Ausdrücke";
 "Mixed" = "Gemischt";
 "NotificationsAndSounds" = "Benachrichtigungen und Töne 􀱁";
-"Preview" = "Vorschau";
+"Preview" = "Details anzeigen:";
 "PreviewTooltip" = "Tastenkürzel zum Vorschauen des gesamten Inhalts des historischen Elements.\nStandardmäßig: Leertaste.";
 "Paste selected items directly to the application you are currently using." = "Ausgewählte Elemente direkt in die aktuell verwendete Anwendung einfügen.";
 "Copy selected items to the system clipboard to paste manually later." = "Ausgewählte Elemente in die Zwischenablage kopieren, um sie später manuell einzufügen.";

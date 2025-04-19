@@ -8,9 +8,9 @@
 "PinTooltip" = "مفتاح الاختصار لتثبيت عنصر السجل.\nالافتراضي: %@P.";
 "Delete" = "حذف:";
 "DeleteTooltip" = "مفتاح الاختصار لحذف عنصر السجل.\nالافتراضي: %@⌫.";
-"Behavior" = "الإجراء:";
+"Behavior" = "لصق العناصر:";
 "PasteAutomatically" = "لصق تلقائيًا";
-"PasteWithoutFormatting" = "لصق بدون تنسيق";
+"PasteWithoutFormatting" = "دائمًا لصق بدون تنسيق";
 "Modifiers" = "تخصيص الإجراء عند تحديد العنصر:\n• حدد مع %@ ضغط لنسخ العنصر.\n• حدد مع %@ ضغط لنسخ ولصق العنصر.\n• حدد مع %@ ضغط لنسخ، مسح التنسيق ولصق العنصر.";
 "Search" = "البحث:";
 "Exact" = "دقيق";
@@ -18,7 +18,7 @@
 "Regex" = "التعبيرات العادية";
 "Mixed" = "مختلط";
 "NotificationsAndSounds" = "الإشعارات والأصوات 􀱁";
-"Preview" = "المعاينة";
+"Preview" = "عرض التفاصيل:";
 "PreviewTooltip" = "اختصار لمعاينة المحتوى الكامل للعناصر التاريخية.\nالإفتراضي: المسافة.";
 "Paste selected items directly to the application you are currently using." = "لصق العناصر المحددة مباشرة في التطبيق الذي تستخدمه حاليًا.";
 "Copy selected items to the system clipboard to paste manually later." = "نسخ العناصر المحددة إلى الحافظة النظام للصقها يدويًا لاحقًا.";
