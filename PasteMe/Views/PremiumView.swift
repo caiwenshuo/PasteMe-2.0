@@ -127,7 +127,7 @@ struct PremiumView: View {
                     }
                 }.padding().padding(.horizontal, 40)
             }
-        }.frame(width: 550, height: 700).background(Color(NSColor.windowBackgroundColor)).environment(\.colorScheme, .light).onAppear{
+        }.frame(width: 550, height: 700).background(Color(NSColor.windowBackgroundColor)).onAppear{
             EventTracker.shared.trackEvent(key: EventKey.subscripionViewShow.rawValue)
         }
     }

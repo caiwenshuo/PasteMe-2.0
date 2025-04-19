@@ -31,10 +31,10 @@ class Clipboard {
   ]
   
   private let newUserInsertItems: [String] = [
-    "Start typing in the search bar and press Enter to search.",
-    "Right-click items to access more actions, such as pinning them.",
-    "Press the Space key to view item details.",
-    "Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app."
+    NSLocalizedString("Start typing in the search bar and press Enter to search.", comment: ""),
+    NSLocalizedString("Right-click items to access more actions, such as pinning them.", comment: ""),
+    NSLocalizedString("Press the Space key to view item details.", comment: ""),
+    NSLocalizedString("Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app.", comment: "")
   ]
 
   private var enabledTypes: Set<NSPasteboard.PasteboardType> { Defaults[.enabledPasteboardTypes] }

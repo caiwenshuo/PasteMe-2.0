@@ -89,10 +89,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     Purchases.configure(withAPIKey: "appl_VEdlmDnfkhvUhkIZBqypmsNimwL")
     Store.shared.startUpFetchProduct()
     
-#if DEBUG
-    Defaults[.isFirstLaunch] = true
-#endif
-    print("firstlaunch \(Defaults[.isFirstLaunch])")
+//#if DEBUG
+//    Defaults[.isFirstLaunch] = true
+//#endif
     if Defaults[.isFirstLaunch] {
       Defaults[.firstLaunchDate] = Date()
       setNewUserWindow()
@@ -108,7 +107,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
-    panel.toggle(height: AppState.shared.popup.height)
+    if !Defaults[.isFirstLaunch] {
+      panel.toggle(height: AppState.shared.popup.height)
+    }
     return true
   }
 
