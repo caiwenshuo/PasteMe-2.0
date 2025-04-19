@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Benachrichtigungen und Töne 􀱁";
 "Preview" = "Vorschau";
 "PreviewTooltip" = "Tastenkürzel zum Vorschauen des gesamten Inhalts des historischen Elements.\nStandardmäßig: Leertaste.";
+"Paste selected items directly to the application you are currently using." = "Ausgewählte Elemente direkt in die aktuell verwendete Anwendung einfügen.";
+"Copy selected items to the system clipboard to paste manually later." = "Ausgewählte Elemente in die Zwischenablage kopieren, um sie später manuell einzufügen.";
+"To clipboard" = "In die Zwischenablage";
+"To active app" = "In aktive Anwendung";

@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "الإشعارات والأصوات 􀱁";
 "Preview" = "المعاينة";
 "PreviewTooltip" = "اختصار لمعاينة المحتوى الكامل للعناصر التاريخية.\nالإفتراضي: المسافة.";
+"Paste selected items directly to the application you are currently using." = "لصق العناصر المحددة مباشرة في التطبيق الذي تستخدمه حاليًا.";
+"Copy selected items to the system clipboard to paste manually later." = "نسخ العناصر المحددة إلى الحافظة النظام للصقها يدويًا لاحقًا.";
+"To clipboard" = "إلى الحافظة";
+"To active app" = "إلى التطبيق النشط";

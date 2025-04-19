@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Obavještenja i zvukovi 􀱁";
 "Preview" = "Pregled";
 "PreviewTooltip" = "Prečica za pregled cijelog sadržaja stavke iz povijesti.\nZadano: razmaknica.";
+"Paste selected items directly to the application you are currently using." = "Zalijepi odabrane stavke direktno u aplikaciju koju trenutno koristite.";
+"Copy selected items to the system clipboard to paste manually later." = "Kopiraj odabrane stavke u sistemski međuspremnik za kasnije ručno lijepljenje.";
+"To clipboard" = "U međuspremnik";
+"To active app" = "U aktivnu aplikaciju";

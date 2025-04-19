@@ -66,3 +66,15 @@
 "Press the Space key to view item details." = "点击空格建可查看复制内容的详情。";
 "Access and reuse anything you've copied on your device here. Click or press ⌘ + number to paste items into any app." = "在这里你可以查看和使用该设备上所有复制的内容。点击复制内容，或使用 ⌘ + 数字，即可将复制项粘贴。";
 "Pay once, use forever." = "一次付费，终身使用";
+"An Easy Way to Copy and Paste" = "随心复制粘贴";
+"PasteMe keeps a history of everything you copy, so you can quickly find and reuse it at any time." = "PasteMe 保存了你复制所有内容的历史，以便你随时快捷查找和使用。";
+"Get Start" = "开始";
+"Quick Start" = "快速开始";
+"Set up and strat using PasteMe." = "设置 PasteMe。";
+"Activation shortcut" = "激活 PasteMe 的快捷键";
+"Instantly access PasteMe in any app" = "在任何应用中快速访问 PasteMe";
+"Clipboard history" = "剪贴板历史";
+"Maximum number of copied items to keep" = "保存的复制记录的最大数量";
+"Popup Position" = "展示位置";
+"Position where PasteMe appears" = "PasteMe 在屏幕中出现的位置";
+"Continue" = "继续";

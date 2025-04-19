@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "通知和聲音 􀱁";
 "Preview" = "預覽";
 "PreviewTooltip" = "預覽歷史項目的完整內容的快捷鍵。\n預設：空格鍵。";
+"Paste selected items directly to the application you are currently using." = "直接將所選項目貼上到您當前使用的應用程式。";
+"Copy selected items to the system clipboard to paste manually later." = "將所選項目複製到系統剪貼簿，以便稍後手動貼上。";
+"To clipboard" = "到剪貼簿";
+"To active app" = "到當前應用程式";

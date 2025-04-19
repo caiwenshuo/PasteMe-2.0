@@ -20,3 +20,7 @@
 "Open" = "Otwórz:";
 "Preview" = "Podgląd";
 "PreviewTooltip" = "Skrót klawiszowy do podglądu pełnej zawartości elementu historii.\nDomyślnie: spacja.";
+"Paste selected items directly to the application you are currently using." = "Wklej wybrane elementy bezpośrednio do aplikacji, której aktualnie używasz.";
+"Copy selected items to the system clipboard to paste manually later." = "Skopiuj wybrane elementy do schowka systemowego, aby wkleić je później ręcznie.";
+"To clipboard" = "Do schowka";
+"To active app" = "Do aktywnej aplikacji";

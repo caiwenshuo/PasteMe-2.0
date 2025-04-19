@@ -20,4 +20,8 @@
 "NotificationsAndSounds" = "Meldingen en geluiden 􀱁";
 "Preview" = "Voorvertoning";
 "PreviewTooltip" = "Sneltoets om de volledige inhoud van een historisch item te bekijken.\nStandaard: spatiebalk.";
+"Paste selected items directly to the application you are currently using." = "Geselecteerde items direct in de applicatie plakken die u momenteel gebruikt.";
+"Copy selected items to the system clipboard to paste manually later." = "Geselecteerde items naar het systeemklembord kopiëren om later handmatig te plakken.";
+"To clipboard" = "Naar klembord";
+"To active app" = "Naar actieve app";
 

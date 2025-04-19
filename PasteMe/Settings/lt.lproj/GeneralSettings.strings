@@ -20,3 +20,7 @@
 "DeleteTooltip" = "Spartusis klavišas istorijos elementui ištrinti.\nNumatytasis spartusis klavišas: ⌥⌫.";
 "Preview" = "Peržiūra";
 "PreviewTooltip" = "Paskirtasis klavišas visam istorijos elemento turiniui peržiūrėti.\nNumatytasis: tarpo klavišas.";
+"Paste selected items directly to the application you are currently using." = "Įklijuoti pasirinktus elementus tiesiogiai į šiuo metu naudojamą programą.";
+"Copy selected items to the system clipboard to paste manually later." = "Kopijuoti pasirinktus elementus į sistemos iškarpinę, kad vėliau galėtumėte įklijuoti rankiniu būdu.";
+"To clipboard" = "Į iškarpinę";
+"To active app" = "Į aktyvią programą";

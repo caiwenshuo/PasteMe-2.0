@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Varsler og lyder 􀱁";
 "Preview" = "Forhåndsvisning";
 "PreviewTooltip" = "Snarveiknapp for å forhåndsvise hele innholdet i et historikk-element.\nStandard: mellomromstasten.";
+"Paste selected items directly to the application you are currently using." = "Lim inn valgte elementer direkte i programmet du bruker nå.";
+"Copy selected items to the system clipboard to paste manually later." = "Kopier valgte elementer til systemets utklippstavle for å lime inn manuelt senere.";
+"To clipboard" = "Til utklippstavlen";
+"To active app" = "Til aktivt program";

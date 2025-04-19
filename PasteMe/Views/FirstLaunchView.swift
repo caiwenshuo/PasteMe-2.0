@@ -66,7 +66,7 @@ struct FirstLaunchView: View {
                         Divider()
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("Activation shortcut", tableName: "GeneralSettings")
+                                Text("Activation shortcut")
                                 Text("Instantly access PasteMe in any app").foregroundStyle(Color(NSColor.secondaryLabelColor))
                             }
                             Spacer()
@@ -77,7 +77,7 @@ struct FirstLaunchView: View {
 
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("Clipboard history", tableName: "StorageSettings")
+                                Text("Clipboard history")
                                 Text("Maximum number of copied items to keep").foregroundStyle(Color(NSColor.secondaryLabelColor))
                             }
                             Spacer()
@@ -92,7 +92,7 @@ struct FirstLaunchView: View {
 
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("Popup Position", tableName: "AppearanceSettings")
+                                Text("Popup Position")
                                 Text("Position where PasteMe appears").foregroundStyle(Color(NSColor.secondaryLabelColor))
                             }
                             Spacer()
@@ -132,19 +132,8 @@ struct FirstLaunchView: View {
                     }
                     Spacer()
                 }.padding().frame(width: widthOfWindow, height: heightOfWindow)
-            case .configue:
-                VStack(spacing: 30){
-                    Image("newUserSetting").resizable().scaledToFit().frame(width: 300, height: 300, alignment: .center).padding(.top, 40)
-                    Text("You can customize the fatigue settings, reminder style, notification interval, etc., later in the Settings.").multilineTextAlignment(.center).frame(width: textWidth, height: heightOfText, alignment: .top).opacity(opacity)
-                    Text("Start").foregroundColor(Color.white).font(.headline).padding(.horizontal, 50).padding(.vertical, 10).background(Color(NSColor.controlAccentColor)).cornerRadius(10.0).onTapGesture {
-                        UserDefaults.standard.setValue(false, forKey: "isNewUser")
-                        self.state = .finished
-                    }
-                    Spacer()
-                }.padding().frame(width: widthOfWindow, height: heightOfWindow)
             case .finished:
                 PremiumView().onAppear{
-                    print("appear ")
                     Defaults[.isFirstLaunch] = false
                 }
             }
@@ -155,7 +144,6 @@ struct FirstLaunchView: View {
 enum viewState {
     case first
     case second
-    case configue
     case finished
 }
 

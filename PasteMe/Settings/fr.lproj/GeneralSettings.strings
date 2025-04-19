@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Notifications et sons 􀱁";
 "Preview" = "Aperçu";
 "PreviewTooltip" = "Raccourci pour prévisualiser le contenu complet de l'élément d'historique.\nPar défaut : barre d'espace.";
+"Paste selected items directly to the application you are currently using." = "Coller les éléments sélectionnés directement dans l'application que vous utilisez actuellement.";
+"Copy selected items to the system clipboard to paste manually later." = "Copier les éléments sélectionnés dans le presse-papiers système pour les coller manuellement plus tard.";
+"To clipboard" = "Vers le presse-papiers";
+"To active app" = "Vers l'application active";

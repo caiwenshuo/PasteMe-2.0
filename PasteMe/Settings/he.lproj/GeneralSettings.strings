@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "התראות וצלילים 􀱁";
 "Preview" = "תצוגה מקדימה";
 "PreviewTooltip" = "קיצור דרך לצפייה בתוכן המלא של פריט היסטוריה.\nברירת מחדל: רווח.";
+"Paste selected items directly to the application you are currently using." = "להדביק את הפריטים שנבחרו ישירות ביישום שבו אתה משתמש כרגע.";
+"Copy selected items to the system clipboard to paste manually later." = "להעתיק את הפריטים שנבחרו ללוח של המערכת כדי להדביק אותם ידנית מאוחר יותר.";
+"To clipboard" = "ללוח";
+"To active app" = "ליישום הפעיל";

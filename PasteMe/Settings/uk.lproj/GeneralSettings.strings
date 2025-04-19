@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Сповіщення та звуки 􀱁";
 "Preview" = "Попередній перегляд";
 "PreviewTooltip" = "Комбінація клавіш для попереднього перегляду повного вмісту елемента історії.\nЗа замовчуванням: пробіл.";
+"Paste selected items directly to the application you are currently using." = "Вставити вибрані елементи безпосередньо в програму, яку ви зараз використовуєте.";
+"Copy selected items to the system clipboard to paste manually later." = "Скопіювати вибрані елементи в системний буфер обміну для подальшого вставлення вручну.";
+"To clipboard" = "У буфер обміну";
+"To active app" = "У активну програму";

@@ -20,3 +20,7 @@
 "Modifiers" = "Viselkedés testreszabása az elem kiválasztásakor:\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz es a beillesztéshez.\n• Tartsd nyomva a %@ gombot és válaszd ki az elemet a másoláshoz, a formázások törléséhez és a beillesztéshez.";
 "Preview" = "Előnézet";
 "PreviewTooltip" = "Gyorsbillentyű a történelem elemének teljes tartalmának megtekintéséhez.\nAlapértelmezett: szóköz.";
+"Paste selected items directly to the application you are currently using." = "A kiválasztott elemek közvetlen beillesztése az éppen használt alkalmazásba.";
+"Copy selected items to the system clipboard to paste manually later." = "A kiválasztott elemek másolása a rendszer vágólapjára későbbi kézi beillesztéshez.";
+"To clipboard" = "Vágólapra";
+"To active app" = "Aktív alkalmazásba";

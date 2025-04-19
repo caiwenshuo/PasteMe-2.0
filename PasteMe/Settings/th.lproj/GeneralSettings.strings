@@ -20,4 +20,8 @@
 "NotificationsAndSounds" = "การแจ้งเตือนและเสียง 􀱁";
 "Preview" = "ดูตัวอย่าง";
 "PreviewTooltip" = "ปุ่มลัดเพื่อดูเนื้อหาฉบับเต็มของรายการประวัติศาสตร์.\nค่าเริ่มต้น: ปุ่มเว้นวรรค.";
+"Paste selected items directly to the application you are currently using." = "วางรายการที่เลือกโดยตรงไปยังแอปพลิเคชันที่คุณกำลังใช้งานอยู่";
+"Copy selected items to the system clipboard to paste manually later." = "คัดลอกรายการที่เลือกไปยังคลิปบอร์ดของระบบเพื่อวางด้วยตนเองในภายหลัง";
+"To clipboard" = "ไปยังคลิปบอร์ด";
+"To active app" = "ไปยังแอปที่ใช้งานอยู่";
 

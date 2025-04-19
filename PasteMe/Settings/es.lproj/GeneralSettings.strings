@@ -20,4 +20,8 @@
 "NotificationsAndSounds" = "Notificaciones y sonidos 􀱁";
 "Preview" = "Vista previa";
 "PreviewTooltip" = "Tecla de acceso rápido para previsualizar el contenido completo del elemento de historial.\nPredeterminado: barra espaciadora.";
+"Paste selected items directly to the application you are currently using." = "Pegar los elementos seleccionados directamente en la aplicación que está utilizando actualmente.";
+"Copy selected items to the system clipboard to paste manually later." = "Copiar los elementos seleccionados al portapapeles del sistema para pegarlos manualmente más tarde.";
+"To clipboard" = "Al portapapeles";
+"To active app" = "A la aplicación activa";
 

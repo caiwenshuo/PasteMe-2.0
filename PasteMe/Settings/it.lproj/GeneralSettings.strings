@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Notifiche e suoni 􀱁";
 "Preview" = "Anteprima";
 "PreviewTooltip" = "Tasto di scelta rapida per visualizzare il contenuto completo dell'elemento storico.\nPredefinito: barra spaziatrice.";
+"Paste selected items directly to the application you are currently using." = "Incolla gli elementi selezionati direttamente nell'applicazione che stai utilizzando.";
+"Copy selected items to the system clipboard to paste manually later." = "Copia gli elementi selezionati negli appunti di sistema per incollarli manualmente in seguito.";
+"To clipboard" = "Negli appunti";
+"To active app" = "Nell'app attiva";

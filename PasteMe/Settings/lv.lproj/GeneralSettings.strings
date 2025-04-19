@@ -22,4 +22,8 @@
 "PreviewTooltip" = "Ātrās taustiņa kombinācija, lai skatītu pilnu vēstures vienuma saturu.\nNoklusējums: atstarpe.";
 "Preview" = "Priekšskatījums";
 "PreviewTooltip" = "Ātrās taustiņa kombinācija, lai skatītu pilnu vēstures vienuma saturu.\nNoklusējums: atstarpe.";
+"Paste selected items directly to the application you are currently using." = "Ielīmēt atlasītos vienumus tieši programmā, kuru pašlaik izmantojat.";
+"Copy selected items to the system clipboard to paste manually later." = "Kopēt atlasītos vienumus sistēmas starpliktuvē, lai vēlāk tos varētu manuāli ielīmēt.";
+"To clipboard" = "Uz starpliktuvē";
+"To active app" = "Uz aktīvo programmu";
 

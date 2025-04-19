@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "通知と音 􀱁";
 "Preview" = "プレビュー";
 "PreviewTooltip" = "履歴項目の全内容をプレビューするショートカットキー。\nデフォルト：スペースキー。";
+"Paste selected items directly to the application you are currently using." = "選択した項目を現在使用中のアプリケーションに直接貼り付けます。";
+"Copy selected items to the system clipboard to paste manually later." = "選択した項目をシステムのクリップボードにコピーし、後で手動で貼り付けます。";
+"To clipboard" = "クリップボードへ";
+"To active app" = "アクティブなアプリへ";

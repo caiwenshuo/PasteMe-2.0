@@ -20,3 +20,7 @@
 "NotificationsAndSounds" = "Bildirimler ve sesler 􀱁";
 "Preview" = "Önizleme";
 "PreviewTooltip" = "Geçmiş öğesinin tam içeriğini önizlemek için kısayol tuşu.\nVarsayılan: boşluk tuşu.";
+"Paste selected items directly to the application you are currently using." = "Seçili öğeleri doğrudan şu anda kullandığınız uygulamaya yapıştırın.";
+"Copy selected items to the system clipboard to paste manually later." = "Seçili öğeleri daha sonra manuel olarak yapıştırmak için sistem panosuna kopyalayın.";
+"To clipboard" = "Panoya";
+"To active app" = "Aktif uygulamaya";
