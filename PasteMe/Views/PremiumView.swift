@@ -8,11 +8,16 @@
 
 import SwiftUI
 
+enum WindowType {
+    case firstLaunchWindow
+    case premiumWindow
+}
 struct PremiumView: View {
     @ObservedObject var store = Store.shared
-    var termsOfUse = "https://dazzling-list-03d.notion.site/TERMS-OF-SERVICE-c6336e4c5a7a480dbecb3adfd2620cf1?pvs=4"
-    var privacyPolicy = "https://dazzling-list-03d.notion.site/PRIVACY-POLICY-8a976966bc51449cbf2f3268f97a48bd?pvs=4"
     @State var restoreText = NSLocalizedString("Restore",comment: "")
+    var windowType: WindowType
+    private let termsOfUse = "https://dazzling-list-03d.notion.site/TERMS-OF-SERVICE-c6336e4c5a7a480dbecb3adfd2620cf1?pvs=4"
+    private let privacyPolicy = "https://dazzling-list-03d.notion.site/PRIVACY-POLICY-8a976966bc51449cbf2f3268f97a48bd?pvs=4"
 
     var body: some View {
         VStack(alignment: .center, spacing: 5){
@@ -88,7 +93,11 @@ struct PremiumView: View {
                   Text("Skip and use the free version for 12 hours").multilineTextAlignment(.center).padding(.horizontal, 7).padding(.vertical, 11).frame(width: 300)
                     .opacity(0.85)
                     .onTapGesture {
-                      RateSubscribeHelper.shared.closePremiumWindow()
+                        if windowType == .premiumWindow {
+                            RateSubscribeHelper.shared.closePremiumWindow()
+                        } else {
+                            RateSubscribeHelper.shared.closeFirstLaunchWindow()
+                        }
                     }
                 }
                 
@@ -126,6 +135,6 @@ struct PremiumView: View {
 
 struct PremiumView_Previews: PreviewProvider {
     static var previews: some View {
-        PremiumView()
+        PremiumView(windowType: .premiumWindow)
     }
 }

@@ -57,7 +57,7 @@ class RateSubscribeHelper {
       //每次打开设置页面重新获取商品&重新检查订阅状态
       Store.shared.fetchProduct()
       if nil == premiumWindow {
-          let premiumView = PremiumView()
+        let premiumView = PremiumView(windowType: .premiumWindow)
           premiumWindow = NSWindow(
               contentRect: NSRect(x: 20, y: 20, width: 480, height: 300),
               styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
@@ -97,7 +97,9 @@ class RateSubscribeHelper {
   func closePremiumWindow(){
       premiumWindow.close()
   }
-
+  func closeFirstLaunchWindow() {
+    AppState.shared.appDelegate?.newUserWindow?.close()
+  }
 }
 
 enum ReminderType {

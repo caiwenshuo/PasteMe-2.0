@@ -133,7 +133,7 @@ struct FirstLaunchView: View {
                     Spacer()
                 }.padding().frame(width: widthOfWindow, height: heightOfWindow)
             case .finished:
-                PremiumView().onAppear{
+                PremiumView(windowType: .firstLaunchWindow).onAppear{
                     Defaults[.isFirstLaunch] = false
                 }
             }
